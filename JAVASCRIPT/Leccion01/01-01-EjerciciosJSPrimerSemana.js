@@ -58,9 +58,17 @@ while (i<num.length) {
     }
     contador++;
   } while (contador < numero1.length);
-  document.getElementById("sumaMultiplosDe2").innerText = sumaMultiplosDe2;
  
-  
+ 
+  // ejercicio N8 Ciclo while Gutierrez Agustin
+  //Ejercicio 8: Pedir un número N, y mostrar todos los números del 1 al N.
+
+let numero2 = 8 ;
+let g = 1;
+while (g <= numero2) {
+    console.log(g);
+    g++;
+}
 
 
    
