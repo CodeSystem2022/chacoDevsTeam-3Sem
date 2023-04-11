@@ -20,4 +20,26 @@ console.log("Ejercicio for Espinola Renzo");
         }
     }
     console.log(x);
+
+//Ejercicio Gimenez Rios Tatiana Tamara
+console.log("Ejercicio While Giemenez Rios Tatiana Tamara");
+let negativo=0;
+let positivo=0;
+let neutro=0;
+let i=0;
+let num= [0,2,3,-2,-8,-10,5,50,0,32];
+while (i<num.length) { 
+        if(num[i]>0){
+            positivo+=1;
+        }else if(num[i]<0){
+            negativo+=1;
+        }else{
+            neutro+=1;
+        }
+        i+=1;
+}
+    console.log("Positivo: "+positivo);
+    console.log("Negativo: "+negativo);
+    console.log("Neutro: "+neutro);
+
    
