@@ -42,4 +42,25 @@ while (i<num.length) {
     console.log("Negativo: "+negativo);
     console.log("Neutro: "+neutro);
 
+    // EJERCICIO ALEJO GUTIERREZ 
+
+    let numeros = [];  // Arreglo para almacenar los números ingresados
+     sumaMultiplosDe2 = 0;  // Variable para almacenar la suma de los números múltiplos de 2
+
+
+  let numero1 =[10,25,35,50];  
+  let contador = 0;
+  do {
+    if (numero1[contador] % 2 === 0) {
+      console.log("Es multiplo" ) // Sumamos el número si es múltiplo de 2
+    } else {
+        console.log("No es multiplo")
+    }
+    contador++;
+  } while (contador < numero1.length);
+  document.getElementById("sumaMultiplosDe2").innerText = sumaMultiplosDe2;
+ 
+  
+
+
    
