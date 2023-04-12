@@ -43,6 +43,7 @@ while (i<num.length) {
     console.log("Neutro: "+neutro);
 
     // EJERCICIO ALEJO GUTIERREZ 
+console.log("Ejercicio Alejo Gutierrez");
   let numero1 =[10,25,35,50];  
   let contador = 0;
   do {
@@ -57,7 +58,7 @@ while (i<num.length) {
  
   // ejercicio N8 Ciclo while Gutierrez Agustin
   //Ejercicio 8: Pedir un número N, y mostrar todos los números del 1 al N.
-
+console.log("Ejercicio Gutierrez Agustin");
 let numero2 = 8 ;
 let g = 1;
 while (g <= numero2) {
@@ -66,15 +67,30 @@ while (g <= numero2) {
 }
 
 //Ejercicio N9 While Gutierrez Juana Natalia
-//
+console.log("Ejercicio Gutierrez Juana Natalia");
 let conteo = 0;
 while (conteo <= 7) {
   console.log("conteo= "+conteo );
   conteo++;
-
+}
 //Ejercicio N10 Ciclo for Balbuena Nicolas
+console.log("Ejercicio Balbuena Nicolas");
 for (let i = 1; i <= 10; i++) {
     console.log(i);
 }
+
+//Ejercicio N11 While Ivan Matias
+console.log("Ejercicio Ivan Matias");
+let numeros = [5, 10, 15, 20];
+let cuadrado;
+let i1 = 0;
+
+while(i1 < numeros.length){
+    cuadrado = Math.pow(numeros[i1], 2);
+    console.log(`El número ${numeros[i1]} elevado al cuadrado es: ${cuadrado}`);
+    i1++;
 }
+console.log("El programa ha finalizado por haber recorrido todos los números del array");
+
+
    
