@@ -70,5 +70,11 @@ while (g <= numero2) {
     g++;
 }
 
-
+//Ejercicio N9 While Gutierrez Juana Natalia
+//
+let conteo = 0;
+while (conteo <= 7) {
+  console.log("conteo= "+conteo );
+  conteo++;
+}
    
