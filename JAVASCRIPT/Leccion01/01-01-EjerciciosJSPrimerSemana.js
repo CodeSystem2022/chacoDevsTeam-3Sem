@@ -71,5 +71,10 @@ let conteo = 0;
 while (conteo <= 7) {
   console.log("conteo= "+conteo );
   conteo++;
+
+//Ejercicio N10 Ciclo for Balbuena Nicolas
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
 }
    
