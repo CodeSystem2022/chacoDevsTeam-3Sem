@@ -43,11 +43,6 @@ while (i<num.length) {
     console.log("Neutro: "+neutro);
 
     // EJERCICIO ALEJO GUTIERREZ 
-
-    let numeros = [];  // Arreglo para almacenar los números ingresados
-     sumaMultiplosDe2 = 0;  // Variable para almacenar la suma de los números múltiplos de 2
-
-
   let numero1 =[10,25,35,50];  
   let contador = 0;
   do {
