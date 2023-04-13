@@ -92,5 +92,11 @@ while(i1 < numeros.length){
 }
 console.log("El programa ha finalizado por haber recorrido todos los números del array");
 
-
+//Ejercicio N12 Do While, Valdez Carlos Federico
+let count = 0;
+let limite = 7;
+do{
+    count++;
+    console.log("el numero actual de la estructura de control es"+ count)
+}while(limite < 7);
    
