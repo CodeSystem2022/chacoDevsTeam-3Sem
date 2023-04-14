@@ -99,4 +99,20 @@ do{
     count++;
     console.log("el numero actual de la estructura de control es"+ count)
 }while(limite < 7);
-   
+
+
+// Ejercicio N13 FOR, Juan Carlos Gutierrez
+
+  // Solicitar las notas
+  console.log("Ejercicio De Juan Carlos Gutierrez")
+  let notaIntegrador = 2
+  let notaExposicion = 5
+  let notaParcial = 8
+
+  // Calcular la nota final
+  let notaFinal = (notaIntegrador * 0.35) + (notaExposicion * 0.25) + (notaParcial * 0.4);
+if(notaFinal > 6){
+    console.log("Aprobo con " + notaFinal)
+}else{
+    console.log("Reprobo con " + notaFinal)
+}
