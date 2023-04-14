@@ -1,4 +1,4 @@
-# chacoDevsTeam- Tercer Semestre
+# Chaco Devs. Team - Tercer Semestre
 Primera Semana
   Java - Migracion del Proyecto PC Mundo
   Javascript - Ejercicios Ciclos While/Do While/For
