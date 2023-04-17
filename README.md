@@ -1,12 +1,12 @@
 # Chaco Devs. Team - Tercer Semestre
 
-Primera Semana
+# Primera Semana
 
   Java - Migracion del Proyecto PC Mundo
   Javascript - Ejercicios Ciclos While/Do While/For
   Python - Manejo de excepciones 
   
-Segunda Semana
+# Segunda Semana
 
   Java
   JavaScript - Manejo de Arreglos 
