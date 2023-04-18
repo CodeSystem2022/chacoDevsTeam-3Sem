@@ -1,7 +1,8 @@
-# Chaco Devs. Team - Tercer Semestre
+<p align="center" width="100%">
+    <img width="66%" src="https://user-images.githubusercontent.com/70241433/232639040-e612842b-8f49-4208-a575-4880aa5cf110.jpeg"> 
+</p>
 
-![Chaco Devs Team](https://user-images.githubusercontent.com/70241433/232639040-e612842b-8f49-4208-a575-4880aa5cf110.jpeg)
-
+# Tercer Semestre
 
 # Primera Semana (Scrum master-Valladares Juan)
 
