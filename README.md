@@ -1,6 +1,6 @@
 # Chaco Devs. Team - Tercer Semestre
 
-# Primera Semana
+# Primera Semana (Scrum master-Valladares Juan)
 
   Java - Migracion del Proyecto PC Mundo
   
@@ -8,7 +8,7 @@
   
   Python - Manejo de excepciones
   
-# Segunda Semana
+# Segunda Semana (Scrum master-Gutierrez Agustin)
 
   Java
   
