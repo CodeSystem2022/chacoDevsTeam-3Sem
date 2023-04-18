@@ -38,4 +38,4 @@
   
   
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Chaco-Devs.-Team-WIKI
+  WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
