@@ -15,3 +15,19 @@
   JavaScript - Manejo de Arreglos 
   
   Python - Manejo de Archivos 
+  
+  # Tercera Semana (Scrum master-Gimenez Rios Tatiana Tamara)
+  
+  Java
+  
+  JavaScript 
+  
+  Python 
+  
+   # Cuarta Semana (Scrum master-Gutierrez Juana Natalia)
+  
+  Java
+  
+  JavaScript 
+  
+  Python 
