@@ -1,5 +1,8 @@
 # Chaco Devs. Team - Tercer Semestre
 
+![Chaco Devs Team](https://user-images.githubusercontent.com/70241433/232639040-e612842b-8f49-4208-a575-4880aa5cf110.jpeg)
+
+
 # Primera Semana (Scrum master-Valladares Juan)
 
   Java - Migracion del Proyecto PC Mundo
