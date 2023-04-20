@@ -27,12 +27,3 @@ finally: # Siempre se va a ejecutar
     print("Ejecucioon de este bloque Finally")
 
 print(f"El resultado es {resultado}")
-
-# Recorrer Un arreglo - Juan Carlos Gutierrez
-miArreglo = [1, 2, "tres", 4, "cinco"]
-
-for elemento in miArreglo:
-    try:
-        print(elemento)
-    except Exception as e:
-        print(f"Ocurrió un error al imprimir el elemento {elemento}: {e}")
