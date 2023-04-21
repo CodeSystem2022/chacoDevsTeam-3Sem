@@ -105,13 +105,14 @@ do{
 
   // Solicitar las notas
   console.log("Ejercicio De Juan Carlos Gutierrez")
-  let notaIntegrador = 2
-  let notaExposicion = 5
-  let notaParcial = 8
-
+  const arregloNotasAlumno=[5,6,7];
+  let notas=0;
   // Calcular la nota final
-  let notaFinal = (notaIntegrador * 0.35) + (notaExposicion * 0.25) + (notaParcial * 0.4);
-if(notaFinal > 6){
+  for(i=0;i<arregloNotasAlumno.length;i++){
+     notas += (arregloNotasAlumno[i]);
+  }
+let notaFinal = notas/arregloNotasAlumno.length;
+if(notaFinal >= 6){
     console.log("Aprobo con " + notaFinal)
 }else{
     console.log("Reprobo con " + notaFinal)
