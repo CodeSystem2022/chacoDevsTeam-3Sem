@@ -1,5 +1,5 @@
-<p align="center" width="100%">
-    <img width="66%" src="https://user-images.githubusercontent.com/70241433/232639040-e612842b-8f49-4208-a575-4880aa5cf110.jpeg"> 
+<p align="center">
+    <img width="100%" src="https://user-images.githubusercontent.com/70241433/233533920-47091762-ed02-441c-bcb9-02b0112a2dc4.gif"> 
 </p>
 
 # Tercer Semestre
@@ -19,7 +19,7 @@
   JavaScript - Manejo de Arreglos 
   
   Python - Manejo de Archivos 
-  
+
   # Tercera Semana (Scrum master-Gimenez Rios Tatiana Tamara)
   
   Java
