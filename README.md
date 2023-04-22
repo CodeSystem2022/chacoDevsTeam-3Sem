@@ -4,37 +4,35 @@
 
 # Tercer Semestre
 
-# Primera Semana (Scrum master-Valladares Juan)
+## Primera Semana (Scrum master-Valladares Juan)
 
-  Java - Migracion del Proyecto PC Mundo
+ ### Java - Migracion del Proyecto PC Mundo
   
-  Javascript - Ejercicios Ciclos While/Do While/For
+ ### Javascript - Ejercicios Ciclos While/Do While/For
+   
+ ### Python - Manejo de excepciones
   
-  Python - Manejo de excepciones
+## Segunda Semana (Scrum master-Gutierrez Agustin)
   
-# Segunda Semana (Scrum master-Gutierrez Agustin)
+  ### JavaScript - Manejo de Arreglos 
+  
+  ### Python - Manejo de Archivos 
 
-  Java
+## Tercera Semana (Scrum master-Gimenez Rios Tatiana Tamara)
   
-  JavaScript - Manejo de Arreglos 
+ ### Java
   
-  Python - Manejo de Archivos 
-
-  # Tercera Semana (Scrum master-Gimenez Rios Tatiana Tamara)
+ ### JavaScript - Manejo de Funciones 
   
-  Java
+ ### Python - Proyecto Catalogo de Peliculas
   
-  JavaScript 
+  ## Cuarta Semana (Scrum master-Gutierrez Juana Natalia)
   
-  Python 
+ ### Java
   
-   # Cuarta Semana (Scrum master-Gutierrez Juana Natalia)
+ ### JavaScript 
   
-  Java
-  
-  JavaScript 
-  
-  Python 
+ ### Python 
   
   
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
