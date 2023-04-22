@@ -20,7 +20,7 @@
 
 ## Tercera Semana (Scrum master-Gimenez Rios Tatiana Tamara)
   
- ### Java
+ ### Java - Bloques y mucho más
   
  ### JavaScript - Manejo de Funciones 
   
