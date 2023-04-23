@@ -78,4 +78,8 @@ function miFuncionDos(a, b){
  var miFuncionTexto = miFuncionDos.toString();//convierte la funcion a texto
  console.log(miFuncionTexto);  
 
- 
+  //Gutierrez Juana Natalia
+ //Funcion Flecha
+ const sumarFuncionFlecha = (a, b) =>a + b;
+ resultado = sumarFuncionFlecha(3, 7);//Asignamos el valor a una variable
+    console.log(resultado);
