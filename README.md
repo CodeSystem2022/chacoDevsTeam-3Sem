@@ -24,7 +24,7 @@
   
  ### JavaScript - [Manejo de Funciones](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/JAVASCRIPT-Ejercicio-3-semana-FUNCIONES.) 
   
- ### Python - Proyecto Catalogo de Peliculas
+ ### Python - [Proyecto Catalogo de Peliculas](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/PROYECTO:-CAT%C3%81LOGO-PEL%C3%8DCULAS)
   
   ## Cuarta Semana (Scrum master-Gutierrez Juana Natalia)
   
