@@ -5,6 +5,9 @@ import enumeraciones.Dias;
 
 public class TestEnumeraciones {
     public static void main(String[] args) {
+        //System.out.println("Dia:"+Dias.MARTES);
+        //indicarDiaSemana(Dias.MARTES);
+
         System.out.println("Continente No.4: " + Continentes.AMERICA);
         System.out.println("Numero de paises en el 4to. continente: "
                 + Continentes.AMERICA.getPaises());
@@ -36,7 +39,38 @@ public class TestEnumeraciones {
                 + Continentes.EUROPA.getHabitantes());
     }
 
+    private static void indicarDiaSemana(Dias dias){
+        switch(dias){
+            case LUNES:
+                System.out.println("Primer dia de la semana");
+                break;
+            case MARTES:
+                System.out.println("Segundo dia de la semana");
+                break;
+            case MIERCOLES:
+                System.out.println("Primer dia de la semana");
+                break;
+            case JUEVES:
+                System.out.println("Segundo dia de la semana");
+                break;
+            case VIERNES:
+                System.out.println("Primer dia de la semana");
+                break;
+            case SABADO:
+                System.out.println("Segundo dia de la semana");
+                break;
+            case DOMINGO:
+                System.out.println("Segundo dia de la semana");
+                break;
+                default:
+                System.out.println("El valor ingresado no es valido");
+                        break;
+                }
 
-       // System.out.println("Dia:"+Dias.LUNES);
-    }
+        }
+
+}
+
+ 
+
 
