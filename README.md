@@ -10,7 +10,7 @@
   
  ### Javascript - [Ejercicios Ciclos While/Do While/For](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-de-JAVASCRIPT-Primer-Semana-Ciclos)
    
- ### Python - Manejo de excepciones
+ ### Python - [Manejo de excepciones](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicio-primera-semana-PYTHON)
   
 ## Segunda Semana (Scrum master-Gutierrez Agustin)
   
