@@ -23,4 +23,11 @@ public class Persona {
     public int getIdPersona(){
         return this.idPersona;
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "idPersona=" + idPersona + '}';
+    }
+    
+    
 }
