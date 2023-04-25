@@ -14,7 +14,7 @@
   
 ## Segunda Semana (Scrum master-Gutierrez Agustin)
   
-  ### JavaScript - Manejo de Arreglos 
+  ### JavaScript - [Manejo de Arreglos](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Segunda-semana-JAVASCRIPT-Arreglos) 
   
   ### Python - Manejo de Archivos 
 
