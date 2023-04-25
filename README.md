@@ -22,7 +22,7 @@
   
  ### Java - Bloques y mucho más
   
- ### JavaScript - Manejo de Funciones 
+ ### JavaScript - [Manejo de Funciones](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/JAVASCRIPT-Ejercicio-3-semana-FUNCIONES.) 
   
  ### Python - Proyecto Catalogo de Peliculas
   
