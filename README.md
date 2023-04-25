@@ -8,7 +8,7 @@
 
  ### Java - Migracion del Proyecto PC Mundo
   
- ### Javascript - Ejercicios Ciclos While/Do While/For
+ ### Javascript - [Ejercicios Ciclos While/Do While/For](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-de-JAVASCRIPT-Primer-Semana-Ciclos)
    
  ### Python - Manejo de excepciones
   
