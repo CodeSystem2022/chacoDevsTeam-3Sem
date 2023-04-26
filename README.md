@@ -28,11 +28,11 @@
   
   ## Cuarta Semana (Scrum master-Gutierrez Juana Natalia)
   
- ### Java
+ ### Java - 
   
- ### JavaScript 
+ ### JavaScript - Objetos
   
- ### Python 
+ ### Python - Conexion con BD PostgreSQL
   
   ## Quinta Semana (Scrum master- Balbuena Federico Nicolas)
   
