@@ -20,7 +20,7 @@
 
 ## Tercera Semana (Scrum master-Gimenez Rios Tatiana Tamara)
   
- ### Java - Bloques y mucho más
+ ### Java - [Bloques y mucho más](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-segunda-semana---Bloques-y-muchos-m%C3%A1s.)
   
  ### JavaScript - [Manejo de Funciones](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/JAVASCRIPT-Ejercicio-3-semana-FUNCIONES.) 
   
