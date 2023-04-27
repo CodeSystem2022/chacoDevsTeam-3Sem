@@ -18,3 +18,11 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreComleto());
+
+console.log(persona['apellido']);//Accedemos como si fuera un arreglo
+
+//for in
+for(propiedad in persona){
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+}
