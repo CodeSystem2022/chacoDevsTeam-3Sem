@@ -27,6 +27,11 @@ for(propiedad in persona){
     console.log(persona[propiedad]);
 }
 
+// ALEJO HERNAN GUTIERREZ
+persona.apellida = 'Betancud';//Cambiamos dinamicamente un valor del objeto 
+delete persona.apellida;
+console.log(persona);
+
 //Tatiana Tamara, Giménez Ríos.
 //Distintas formas de imprimir un objeto.
 //Número 1: la más sencilla: Concatenar cada valor de cada propiedad
