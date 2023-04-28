@@ -1,6 +1,6 @@
 let x= 10;
 console.log(x.length);
-
+console.log('Tipos Primitivos');
 //Objeto
 let persona= {
     nombre:'Carlos',
@@ -18,15 +18,17 @@ console.log(persona.email);
 console.log(persona.edad);
 console.log(persona);
 console.log(persona.nombreComleto());
-
+console.log('Ejecutando con un objeto');
 console.log(persona['apellido']);//Accedemos como si fuera un arreglo
+
+console.log('Creamos un nuevo objeto');
 
 //for in
 for(propiedad in persona){
     console.log(propiedad);
     console.log(persona[propiedad]);
 }
-
+console.log('cambiamos y eliminamos un error');
 // ALEJO HERNAN GUTIERREZ
 persona.apellida = 'Betancud';//Cambiamos dinamicamente un valor del objeto 
 delete persona.apellida;
