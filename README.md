@@ -4,16 +4,25 @@
 
 # **Integrantes**
 
-:godmode:Balbuena, Fernando Nicolas                          
-:godmode:Espinola, Renzo Oscar           
-:godmode:Giménez Ríos, Tatiana T.      
-:godmode:Gutiérrez, Juana Natalia        
-:godmode:Gutiérrez, Alejo Hernán         
-:godmode:Gutiérrez, Juan Carlos           
+:godmode:Balbuena, Fernando Nicolas 
+
+:godmode:Espinola, Renzo Oscar    
+
+:godmode:Giménez Ríos, Tatiana T.  
+
+:godmode:Gutiérrez, Juana Natalia   
+
+:godmode:Gutiérrez, Alejo Hernán 
+
+:godmode:Gutiérrez, Juan Carlos 
+
 :godmode:Gutiérrez, René Agustín
+
 :godmode:Iván, Matías 
-:godmode:Valdez, Carlos Federico         
-:godmode:Valladares, Juan Ignacio          
+
+:godmode:Valdez, Carlos Federico
+
+:godmode:Valladares, Juan Ignacio        
 
 # Tercer Semestre
 
