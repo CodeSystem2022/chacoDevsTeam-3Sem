@@ -52,7 +52,7 @@
   
  ### Java - forEach, Autoboxing, Unboxing, Modificadores de acceso
   
- ### JavaScript - Objetos
+ ### JavaScript - [Objetos](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/JAVASCRIPT-Ejercicio-4-semana-OBJETOS.)
   
  ### Python - Conexion con BD PostgreSQL
   
