@@ -54,7 +54,7 @@
   
  ### JavaScript - [Objetos](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/JAVASCRIPT-Ejercicio-4-semana-OBJETOS.)
   
- ### Python - Conexion con BD PostgreSQL
+ ### Python - [Conexion con BD PostgreSQL](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Postgresql-y-Python)
   
   ## Quinta Semana (Scrum master- Balbuena Fernando Nicolas)
   
