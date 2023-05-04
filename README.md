@@ -56,7 +56,7 @@
   
  ### Python - Conexion con BD PostgreSQL
   
-  ## Quinta Semana (Scrum master- Balbuena Federico Nicolas)
+  ## Quinta Semana (Scrum master- Balbuena Fernando Nicolas)
   
  ### Java
   
