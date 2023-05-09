@@ -63,6 +63,14 @@
  ### JavaScript 
   
  ### Python 
+ 
+  ## Sexta Semana (Scrum master- Ivan, Matias)
+  
+ ### Java -
+  
+ ### JavaScript - Objetos Parte 2
+  
+ ### Python - Registros con Postgresql y Python
   
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
