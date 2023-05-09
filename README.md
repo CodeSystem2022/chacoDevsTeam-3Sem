@@ -94,13 +94,13 @@
  
  ### JavaScript
  
+ ### Python
+ 
  ## Décima Semana (Scrum master- Espinola, Renzo.)
   
  ### Java
  
  ### JavaScript
- 
- ### Python
  
  ### Python
  
