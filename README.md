@@ -72,7 +72,7 @@
   
  ### Python - Registros con Postgresql y Python
  
- ## Séptima Semana (Scrum master- )
+ ## Séptima Semana (Scrum master- Gutierrez, Hernán Alejo)
  
  ### Java
  
@@ -80,12 +80,29 @@
  
  ### Python
  
- ## Octava Semana (Scrum master-)
+ ## Octava Semana (Scrum master- Valdez, Carlos Federico.)
   
  ### Java
  
  ### JavaScript
  
  ### Python
+ 
+ ## Novena Semana (Scrum master- Gutierrez, Juan Carlos.)
+  
+ ### Java
+ 
+ ### JavaScript
+ 
+ ## Décima Semana (Scrum master- Espinola, Renzo.)
+  
+ ### Java
+ 
+ ### JavaScript
+ 
+ ### Python
+ 
+ ### Python
+ 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
