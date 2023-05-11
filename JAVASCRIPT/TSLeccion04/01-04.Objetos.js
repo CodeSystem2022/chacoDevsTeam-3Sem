@@ -62,3 +62,22 @@ console.log(personaArray);
 console.log('Distintas formas de imprimir un objeto: forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
+
+
+//Tatiana Tamara, Giménez Ríos.
+//Ticket Nº176
+//Uso de call
+let persona4 = {
+    nombre: 'Juan',
+    apellido: 'Perez',
+    nombreComleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+'' +this.apellido+'' +telefono;
+    }
+}
+let persona5 = {
+    nombre: 'Carlos',
+    apellido: 'Lara'   
+}
+
+console.log(persona4.nombreComleto2('Lic.', '549261848485'));
+console.log(persona4.nombreComleto2.call(persona5, 'Ing.', '5492618585856'));
