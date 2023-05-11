@@ -70,8 +70,9 @@ console.log(personaString);
 let persona4 = {
     nombre: 'Juan',
     apellido: 'Perez',
-    nombreComleto2: function(titulo, telefono){
-        return titulo+': '+this.nombre+'' +this.apellido+'' +telefono;
+    nombreCompleto2: function(titulo, telefono){
+        return titulo+': '+this.nombre+' ' +this.apellido+' ' +telefono;
+        // return this.nombre+ ' ' + this.apellido;
     }
 }
 let persona5 = {
@@ -79,5 +80,10 @@ let persona5 = {
     apellido: 'Lara'   
 }
 
-console.log(persona4.nombreComleto2('Lic.', '549261848485'));
-console.log(persona4.nombreComleto2.call(persona5, 'Ing.', '5492618585856'));
+console.log(persona4.nombreCompleto2('Lic.', '549261848485'));
+console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856'));
+
+//Metodo Apply
+//Espinola Renzo Oscar Alejo
+let arreglo = ['Ing.','5492618686865']
+console.log(persona4.nombreCompleto2.apply(persona5,arreglo));
