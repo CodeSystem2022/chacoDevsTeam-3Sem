@@ -87,3 +87,36 @@ console.log(persona4.nombreCompleto2.call(persona5, 'Ing.', '5492618585856'));
 //Espinola Renzo Oscar Alejo
 let arreglo = ['Ing.','5492618686865']
 console.log(persona4.nombreCompleto2.apply(persona5,arreglo));
+
+
+//Balbuena Fernando Nicolas
+//Distintas formas de crear un objeto
+//Caso objeto 1
+let miObjeto = new Object(); //Esta es una opc formal
+//Caso objeto 2
+let miObjeto2 = {}; //Esta opción es breve y recomendada
+
+//Caso String 1
+let miCadena1 = new String('Hola'); //Sintaxis formal
+//Caso String 2
+let miCadena2 = 'Hola'; //Esta es la sintaxis simplificada y recomendada 
+
+//Caso con números 1
+ let miNumero = new Number(1); //Es formal no recomendable
+ //Caso con numeros 2
+ let miNumero2 = 1; //Sintaxís recomendada 
+
+ //Caso boolean 1
+ let miBoolean1 = new Boolean(false); //Formal
+ //Caso boolean 2
+ let miBoolean2 = false; //Sintaxis recomendada 
+
+ //Caso Arreglos 1
+ let miArreglo1 = new Array(); //FOrmal
+ //Caso Arreglos 2
+ let miArreglo2 = [];
+
+ //Caso Fuction 1
+ let miFuncion1 = new function(){}; //Todo despues de new es considerado objeto
+ //Caso fuction 2
+let miFuncion2 = function(){}; //notacion simplificada y recomendada
