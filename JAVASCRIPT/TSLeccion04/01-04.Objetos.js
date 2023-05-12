@@ -6,10 +6,20 @@ let persona= {
     nombre:'Carlos',
     apellido:'Gil',
     email:'cgil@gmail.com',
-    edad:30,
+    edad:28,
+    idioma: 'es',
+    get lang(){
+        return this.idioma.toUpperCase(); //Convierte las minusculas a mayusculas
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
     nombreComleto: function(){ //metodo
         return this.nombre+' '+this.apellido;
-    }
+    },
+    get nombreEdad(){ //Este es el metodo get 
+        return 'El nombre es: '+this.nombre+', Edad: '+this.edad;
+    },
 }
 
 console.log(persona.nombre);
@@ -63,6 +73,12 @@ console.log('Distintas formas de imprimir un objeto: forma 4');
 let personaString = JSON.stringify(persona);
 console.log(personaString);
 
+console.log('Comenzamos a utilizar el metodo get');
+console.log(persona.nombreEdad);
+
+console.log('Comenzamos con el metodo get y set para idiomas');
+persona.lang = 'en';
+console.log(persona.lang);
 
 //Tatiana Tamara, Giménez Ríos.
 //Ticket Nº176
