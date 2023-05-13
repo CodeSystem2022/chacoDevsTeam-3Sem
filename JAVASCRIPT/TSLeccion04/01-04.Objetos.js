@@ -80,10 +80,11 @@ function Persona3(nombre, apellido, email){
 }
 let padre = new Persona3('Leo', 'Lopez', 'lopezl@gmail.com');
 padre.nombre = 'Luis';
-console.log(padre); 
-
+padre.telefono = '549261828221';
+console.log(padre);
 let madre = new Persona3('Laura', 'Contrera', 'contreral@gmail.com');
 console.log(madre);
+console.log(madre.telefono); //la propiedad no está definida
 
 console.log('Comenzamos a utilizar el metodo get');
 console.log(persona.nombreEdad);
@@ -149,3 +150,9 @@ let miCadena2 = 'Hola'; //Esta es la sintaxis simplificada y recomendada
  //Caso fuction 2
 let miFuncion2 = function(){}; //notacion simplificada y recomendada
 
+//Uso de Prototype
+Persona3.prototype.telefono = '2618383832';
+console.log(padre);
+console.log(madre.telefono);
+madre.telefono = '5492618383832';
+console.log(madre.telefono);
