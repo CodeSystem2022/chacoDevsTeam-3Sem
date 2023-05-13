@@ -50,19 +50,59 @@
   
   ## Cuarta Semana (Scrum master-Gutierrez Juana Natalia)
   
- ### Java - forEach, Autoboxing, Unboxing, Modificadores de acceso
+ ### Java - [ForEach, Autoboxing, Unboxing, Modificadores de acceso](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-tercera-semana---forEach,-Autoboxing,-Unboxing,-Modificadores-de-acceso)
   
- ### JavaScript - Objetos
+ ### JavaScript - [Objetos](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/JAVASCRIPT-Ejercicio-4-semana-OBJETOS.)
   
- ### Python - Conexion con BD PostgreSQL
+ ### Python - [Conexion con BD PostgreSQL](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Postgresql-y-Python)
   
-  ## Quinta Semana (Scrum master- Balbuena Federico Nicolas)
+  ## Quinta Semana (Scrum master- Balbuena Fernando Nicolas)
+  
+ ### Java - [Sobreescritura, Polimorfismo y instanceof](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-cuarta-semana-Sobreescritura,-Polimorfismo-y-instanceof.)
+  
+ ### JavaScript (No hubo clases.)
+  
+ ### Python (No hubo clases.)
+ 
+  ## Sexta Semana (Scrum master- Ivan, Matias)
+  
+ ### Java -
+  
+ ### JavaScript - Objetos Parte 2
+  
+ ### Python - Registros con Postgresql y Python
+ 
+ ## Séptima Semana (Scrum master- Gutierrez, Hernán Alejo)
+ 
+ ### Java
+ 
+ ### JavaScript
+ 
+ ### Python
+ 
+ ## Octava Semana (Scrum master- Valdez, Carlos Federico.)
   
  ### Java
+ 
+ ### JavaScript
+ 
+ ### Python
+ 
+ ## Novena Semana (Scrum master- Gutierrez, Juan Carlos.)
   
- ### JavaScript 
+ ### Java
+ 
+ ### JavaScript
+ 
+ ### Python
+ 
+ ## Décima Semana (Scrum master- Espinola, Renzo.)
   
- ### Python 
-  
+ ### Java
+ 
+ ### JavaScript
+ 
+ ### Python
+ 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
