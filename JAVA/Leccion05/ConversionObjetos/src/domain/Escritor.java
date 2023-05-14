@@ -22,7 +22,7 @@ public class Escritor extends Empleado{
     }
 
     public TipoEscritura getTipoEscritura() {
-        return tipoEscritura;
+        return this.tipoEscritura;
     }
     
     
