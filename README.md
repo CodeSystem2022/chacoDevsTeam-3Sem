@@ -66,7 +66,7 @@
  
   ## Sexta Semana (Scrum master- Ivan, Matias)
   
- ### Java -
+ ### Java - Conversión de objetos, Downcasting, Upcasting, hashcode, equals, abstracción
   
  ### JavaScript - Objetos Parte 2
   
