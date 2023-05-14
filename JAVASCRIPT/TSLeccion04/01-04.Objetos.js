@@ -78,7 +78,7 @@ function Persona3(nombre, apellido, email){
     this.apellido = apellido;
     this.email = email;
     this.nombreCompleto = function(){
-        return this.nombre+' '+this.apellido;
+        return this.nombre+' '+this.apellido;   
     }    
 }
 let padre = new Persona3('Leo', 'Lopez', 'lopezl@gmail.com');
