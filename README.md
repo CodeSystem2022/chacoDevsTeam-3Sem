@@ -70,7 +70,7 @@
   
  ### JavaScript - [Objetos Parte 2](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Clase-5-Objetos-Parte-2)
   
- ### Python - Registros con Postgresql y Python
+ ### Python - [Registros con Postgresql y Python](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Manejo-de-Registros-con-Postgresql-y-Python)
  
  ## Séptima Semana (Scrum master- Gutierrez, Hernán Alejo)
  
