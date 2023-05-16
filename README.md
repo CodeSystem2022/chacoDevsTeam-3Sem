@@ -66,7 +66,7 @@
  
   ## Sexta Semana (Scrum master- Ivan, Matias)
   
- ### Java - Conversión de objetos, Downcasting, Upcasting, hashcode, equals, abstracción
+ ### Java - [Conversión de objetos, Downcasting, Upcasting, hashcode, equals, abstracción](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Conversi%C3%B3n-de-objetos,-Downcasting,-Upcasting,-hashcode,-equals,-abstracci%C3%B3n)
   
  ### JavaScript - [Objetos Parte 2](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Clase-5-Objetos-Parte-2)
   
