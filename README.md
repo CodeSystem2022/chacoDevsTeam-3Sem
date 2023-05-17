@@ -60,11 +60,7 @@
   
  ### Java - [Sobreescritura, Polimorfismo y instanceof](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-cuarta-semana-Sobreescritura,-Polimorfismo-y-instanceof.)
   
- ### JavaScript (No hubo clases.)
-  
- ### Python (No hubo clases.)
- 
-  ## Sexta Semana (Scrum master- Ivan, Matias)
+ ## Sexta Semana (Scrum master- Ivan, Matias)
   
  ### Java - [Conversión de objetos, Downcasting, Upcasting, hashcode, equals, abstracción](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Conversi%C3%B3n-de-objetos,-Downcasting,-Upcasting,-hashcode,-equals,-abstracci%C3%B3n)
   
