@@ -72,9 +72,9 @@
  
  ### Java
  
- ### JavaScript
+ ### JavaScript - Clases y Herencia
  
- ### Python
+ ### Python - Transacciones en postgress y Python
  
  ## Octava Semana (Scrum master- Valdez, Carlos Federico.)
   
