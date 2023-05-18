@@ -70,7 +70,7 @@
  
  ## Séptima Semana (Scrum master- Gutierrez, Hernán Alejo)
  
- ### Java
+ ### Java - Docker
  
  ### JavaScript - Clases y Herencia
  
