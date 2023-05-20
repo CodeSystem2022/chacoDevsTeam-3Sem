@@ -45,3 +45,22 @@ class Empleado extends Persona{//clase hija
 let empleado1 = new Empleado('Maria', 'Gimenez','Sistemas');
 console.log(empleado1);
 console.log(empleado1.nombre);
+
+//VIDEO 3 y 4
+// JUAN CARLOS GUTIERREZ
+function Persona3(nombre, apellido, email){
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.email = email;
+    this.nombreCompleto = function(){
+        return this.nombre + " " + this.apellido;
+}
+}
+let padre =new Persona3('Leo', 'Lopes','lopezl@gmail.com');
+padre.nombre ='Luis'; //MODIFICAMOS EL NOMBRE
+console.log(padre);
+console.log(padre.nombreCompleto()); //UTILIZAMOS LA FUNCION
+let madre = new Persona3('Laura','contrera','contrera@gmail.com');
+console.log(madre);
+console.log(madre.nombreCompleto());
+
