@@ -72,9 +72,9 @@
  
  ### Java - Docker
  
- ### JavaScript - Clases y Herencia
+ ### JavaScript - [Clases y Herencia](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-Sexta-semana-clases)
  
- ### Python - Transacciones en postgress y Python
+ ### Python - [Transacciones en postgress y Python](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-sexta-semana---Transacciones-en-Postgresql-y-Python)
  
  ## Octava Semana (Scrum master- Valdez, Carlos Federico.)
   
