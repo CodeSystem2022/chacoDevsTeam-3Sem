@@ -16,6 +16,10 @@ class Persona{
     set apellido(apellido){
         this._apellido = apellido;
     }
+
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido;
+    }
 }
 
 let persona1 =new Persona('Martin', 'Perez');
@@ -44,7 +48,7 @@ class Empleado extends Persona{//clase hija
 //Espinola Renzo Oscar Alejo
 let empleado1 = new Empleado('Maria', 'Gimenez','Sistemas');
 console.log(empleado1);
-console.log(empleado1.nombre);
+console.log(empleado1.nombreCompleto());
 
 //VIDEO 3 y 4
 // JUAN CARLOS GUTIERREZ
@@ -63,4 +67,3 @@ console.log(padre.nombreCompleto()); //UTILIZAMOS LA FUNCION
 let madre = new Persona3('Laura','contrera','contrera@gmail.com');
 console.log(madre);
 console.log(madre.nombreCompleto());
-
