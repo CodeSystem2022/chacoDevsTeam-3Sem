@@ -7,6 +7,14 @@ class Persona{
         this.apellido = apellido;
     }
 
+//Tatiana Tamara, Giménez Ríos
+get nombre(){
+    return this._nombre;
+}
+
+set nombre(nombre){
+    this._nombre = nombre;
+}
 
 //Video 6 Valladares Juan Ignacio
     get apellido(){
@@ -16,10 +24,13 @@ class Persona{
     set apellido(apellido){
         this._apellido = apellido;
     }
-
     nombreCompleto(){
         return this._nombre+' '+this._apellido;
     }
+
+    toString(){ //Regresa un String
+        return this.nombreCompleto(); 
+     }
 }
 
 let persona1 =new Persona('Martin', 'Perez');
@@ -67,3 +78,8 @@ console.log(padre.nombreCompleto()); //UTILIZAMOS LA FUNCION
 let madre = new Persona3('Laura','contrera','contrera@gmail.com');
 console.log(madre);
 console.log(madre.nombreCompleto());
+
+//Video 3
+//Tatiana Tamara, Giménez Ríos.
+//Object. prototype.toString Esta es la manera de acceder a atributos y métodos de manera dinámica
+console.log(empleado1.toString());
