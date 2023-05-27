@@ -23,6 +23,9 @@ set nombre(nombre){
     set apellido(apellido){
         this._apellido = apellido;
     }
+    nombreCompleto(){
+        return this._nombre+' '+this._apellido;
+    }
 
 }
 
@@ -52,7 +55,7 @@ class Empleado extends Persona{//clase hija
 //Espinola Renzo Oscar Alejo
 let empleado1 = new Empleado('Maria', 'Gimenez','Sistemas');
 console.log(empleado1);
-console.log(empleado1.nombre);
+console.log(empleado1.nombreCompleto());
 
 //VIDEO 3 y 4
 // JUAN CARLOS GUTIERREZ
@@ -75,3 +78,4 @@ console.log(madre.nombreCompleto());
 //Video 3
 //Tatiana Tamara, Giménez Ríos.
 //Object. prototype.toString Esta es la manera de acceder a atributos y métodos de manera dinámica
+
