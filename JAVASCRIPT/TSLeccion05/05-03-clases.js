@@ -27,9 +27,11 @@ set nombre(nombre){
     nombreCompleto(){
         return this._nombre+' '+this._apellido;
     }
-
+    //Sobrescribiendo el metodo de la clase padre (Object)
     toString(){ //Regresa un String
-        return this.nombreCompleto(); 
+       //Se aplica polimorfismo que significa  = multiples formas en tiempo de ejecucion
+       //El metodo que se ejecuta depende si es una refe rencia de tipo padre o hija
+        return this.nombreCompleto();
      }
 }
 
@@ -83,3 +85,5 @@ console.log(madre.nombreCompleto());
 //Tatiana Tamara, Giménez Ríos.
 //Object. prototype.toString Esta es la manera de acceder a atributos y métodos de manera dinámica
 console.log(empleado1.toString());
+//Espinola, Renzo Oscar
+console.log(persona1.toString());
