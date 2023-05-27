@@ -78,11 +78,11 @@
  
  ## Octava Semana (Scrum master- Valdez, Carlos Federico.)
   
- ### Java
+ ### Java - Interfaces
  
- ### JavaScript
+ ### JavaScript - Clases Segunda parte
  
- ### Python
+ ### Python - Capa de datos: Logging y PostgreSQL Parte 1
  
  ## Novena Semana (Scrum master- Gutierrez, Juan Carlos.)
   
