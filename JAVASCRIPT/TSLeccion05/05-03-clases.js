@@ -3,7 +3,7 @@
 
 class Persona{
     constructor(nombre, apellido){
-        this.persona = nombre;
+        this.nombre = nombre;
         this.apellido = apellido;
     }
 
