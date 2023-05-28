@@ -56,6 +56,12 @@ class Empleado extends Persona{//clase hija
     set departamento(departamento){
         this._departamento = departamento;
     }
+    //Fernando Nicolas Balbuena
+    //Sobreescritura
+nombreCompleto(){
+    return super.nombreCompleto()+', '+this._departamento;
+}
+
 }
 //video 8
 //Espinola Renzo Oscar Alejo
