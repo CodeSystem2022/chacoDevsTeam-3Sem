@@ -2,9 +2,14 @@
 //let persona3 = new Persona('Carla', 'Ponce'); esto no se debe hacer: Persona is not defined
 
 class Persona{
+
+    static contadorObjetosPersona = 0;
+
     constructor(nombre, apellido){
         this.nombre = nombre;
         this.apellido = apellido;
+        Persona.contadorObjetosPersona++;
+        console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
     }
 
 //Tatiana Tamara, Giménez Ríos
@@ -112,3 +117,7 @@ Persona.saludar2(persona1);
 //Tatiana Tamara, Giménez Ríos.
 Empleado.saludar();
 Empleado.saludar2(empleado1);
+
+//console.log(persona1.contadorObjetosPersona)
+console.log(Persona.contadorObjetosPersona);
+console.log(Empleado.contadorObjetosPersona);
