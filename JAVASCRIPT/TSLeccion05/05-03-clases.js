@@ -33,6 +33,16 @@ set nombre(nombre){
        //El metodo que se ejecuta depende si es una refe rencia de tipo padre o hija
         return this.nombreCompleto();
      }
+
+//Video 1
+//Tatiana Tamara, Giménez Rios
+     static saludar(){
+        console.log('Saludos desde este método static');   
+    }
+
+    static saludar2(persona){
+        console.log(persona.nombre+' '+persona.apellido);
+    }
 }
 
 let persona1 =new Persona('Martin', 'Perez');
@@ -93,3 +103,12 @@ console.log(madre.nombreCompleto());
 console.log(empleado1.toString());
 //Espinola, Renzo Oscar
 console.log(persona1.toString());
+
+//persona1.saludar(); no se utiliza desde el objeto
+Persona.saludar();
+Persona.saludar2(persona1);
+
+//Video 2
+//Tatiana Tamara, Giménez Ríos.
+Empleado.saludar();
+Empleado.saludar2(empleado1);
