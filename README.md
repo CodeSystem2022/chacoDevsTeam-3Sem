@@ -86,11 +86,11 @@
  
  ## Novena Semana (Scrum master- Gutierrez, Juan Carlos.)
   
- ### Java
+ ### Java - Excepciones y JavaBeans
  
- ### JavaScript
+ ### JavaScript - Static
  
- ### Python
+ ### Python - Logging y Postgresql Parte 2
  
  ## Décima Semana (Scrum master- Espinola, Renzo.)
   
