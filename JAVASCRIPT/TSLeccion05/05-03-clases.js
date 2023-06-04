@@ -3,15 +3,26 @@
 
 class Persona{
 
-    static contadorPersona = 0; // atributo estatico
-    email= "valor default email"; // atributo no estatico
+    static contadorPersona = 0;// atributo estatico
+    //email= "valor default email"; // atributo no estatico
 
+//Video 7 Balbuena Fernando Nicolas
+    static get MAX_OBJ(){  //Este metodo simula una constante
+        return 5;
+    }
 
     constructor(nombre, apellido){
         this.nombre = nombre;
         this.apellido = apellido;
-        this.idPersona =  ++Persona.contadorPersona; 
-        console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
+        //Balbuena Fernando Nicolas
+        if(Persona.contadorPersona < Persona.MAX_OBJ){
+            this.idPersona =  ++Persona.contadorPersona; 
+        }
+        else{
+            console.log('Se ha superado el maximo de objetos permitidos ')
+        }
+        
+        //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
     }
 
 //Tatiana Tamara, Giménez Ríos
@@ -135,3 +146,13 @@ console.log(Persona.contadorPersona);
 let persona3 = new Persona('Carla','Pertosi');
 console.log(persona3.toString())
 console.log(Persona.contadorPersona);
+
+//Video 7 Balbuena Fernando Nicolas
+console.log(Persona.MAX_OBJ);
+Persona.MAX_OBJ = 10;
+console.log(Persona.MAX_OBJ); //No se puede modificar
+
+let persona4= new Persona('Franco','Diaz');
+console.log(persona4.toString())
+let persona5= new Persona('Liliana','Paz');
+console.log(persona5.toString())
