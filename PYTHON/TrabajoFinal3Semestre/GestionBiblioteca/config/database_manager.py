@@ -15,10 +15,13 @@ class DatabaseManager:
     @classmethod
     def crear_basedatos(cls):
         # Establecer conexión sin especificar la base de datos
-        conn = cls.obtenerConexion()
+        conn = bd.connect(host=cls._HOST,
+                          user=cls._USERNAME,
+                          password=cls._PASSWORD,
+                          port=cls._DB_PORT)
         conn.autocommit = True
 
-        cursor = cls.obtenerCursor()
+        cursor = conn.cursor();
         # Crear la base de datos
         cursor.execute(f"CREATE DATABASE {cls._DATABASE}")
         print(f"La base de datos '{cls._DATABASE}' ha sido creada.")
@@ -29,22 +32,20 @@ class DatabaseManager:
         # Establecer conexión con la base de datos
         conn = cls.obtenerConexion()
         cursor = cls.obtenerCursor()
-        # Verificar si la tabla ya existe
-        cursor.execute("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_name = %s)", (nombre_tabla,))
-        existe = cursor.fetchone()[0]
+        with conn:
+            with conn.cursor() as cursor:
+                # Verificar si la tabla ya existe
+                cursor.execute("SELECT EXISTS(SELECT 1 FROM information_schema.tables WHERE table_name = %s)", (nombre_tabla,))
+                existe = cursor.fetchone()[0]
+                if existe:
+                    print(f"La tabla '{nombre_tabla}' ya existe en la base de datos '{cls._DATABASE}'.")
+                else:
+                    # Crear la tabla
+                    cursor.execute(f"CREATE TABLE {nombre_tabla} ({columnas})")
+                    print(f"Se creo tabla '{nombre_tabla}' en la base de datos '{cls._DATABASE}'.")
+                    logger_base.log.info(f"Se creo tabla '{nombre_tabla}' en la base de datos '{cls._DATABASE}'.")
+                    conn.commit()
 
-        if existe:
-            print(f"La tabla '{nombre_tabla}' ya existe en la base de datos '{cls._DATABASE}'.")
-        else:
-            # Crear la tabla
-            cursor.execute(f"CREATE TABLE {nombre_tabla} ({columnas})")
-            print(f"Se creo tabla '{nombre_tabla}' en la base de datos '{cls._DATABASE}'.")
-            logger_base.log.info(f"Se creo tabla '{nombre_tabla}' en la base de datos '{cls._DATABASE}'.")
-
-        # Confirmar los cambios y cerrar la conexión
-        conn.commit()
-        cursor.close()
-        conn.close()
 
     @classmethod
     def inicializar(cls):
