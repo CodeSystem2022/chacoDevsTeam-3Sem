@@ -1,16 +1,15 @@
 import psycopg2
+import config.database_manager as db
 import config.logger_base as logger_base
 
 
 class ABMLibro:
     MI_BD = 'gestionbiblioteca'
     TABLA = 'libro'
-    CONEXION_CONFIG = psycopg2.connect(user='postgres', password='admin', host='127.0.0.1', port='5432',
-                                       database=MI_BD)
 
     @classmethod
     def nuevo_libro(cls, libro):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'INSERT INTO {cls.TABLA} (titulo, genero, anio_publicacion, isbn, autor_id, cantidad) VALUES (%s, %s, %s, %s, %s, %s)'
@@ -26,7 +25,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_libro(cls, id_libro):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -40,7 +39,7 @@ class ABMLibro:
 
     @classmethod
     def listar_libros(cls):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -55,7 +54,7 @@ class ABMLibro:
 
     @classmethod
     def borrar_libro(cls, id_libro):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -71,7 +70,7 @@ class ABMLibro:
 
     @classmethod
     def modificar_libro(cls, libro, id_libro):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'UPDATE {cls.TABLA} SET titulo=%s, genero= %s, anio_publicacion=%s, isbn=%s, autor_id=%s WHERE id_libro=%s'
@@ -87,7 +86,7 @@ class ABMLibro:
 
     @classmethod
     def agregar_libro_existente(cls, cantidad, id_libro):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'UPDATE {cls.TABLA} SET cantidad=%s WHERE id_libro=%s'
@@ -103,7 +102,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_libro_por_titulo(cls, titulo):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -117,7 +116,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_id_libro_por_id(cls, titulo):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -131,7 +130,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_libro_por_isbn(cls, isbn):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -145,7 +144,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_cantidad_libro_por_isbn(cls, isbn):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -159,7 +158,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_cantidad_libro_por_id(cls, id_libro):
-        conexion = cls.CONEXION_CONFIG
+        conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
