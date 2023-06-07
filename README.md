@@ -86,11 +86,11 @@
  
  ## Novena Semana (Scrum master- Gutierrez, Juan Carlos.)
   
- ### Java
+ ### Java - [Excepciones y JavaBeans](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-septima-semana-Excepciones-y-JavaBeans)
  
- ### JavaScript
+ ### JavaScript - [Static](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-octava-semana-Static)
  
- ### Python
+ ### Python - [Logging y Postgresql Parte 2](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-octava-semana-Capa-de-Datos:-Logging-y-Postgresql-Parte-2)
  
  ## Décima Semana (Scrum master- Espinola, Renzo.)
   
