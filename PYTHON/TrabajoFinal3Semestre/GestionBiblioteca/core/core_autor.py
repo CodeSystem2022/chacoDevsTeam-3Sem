@@ -5,8 +5,6 @@ import config.logger_base as logger_base
 class ABMAutor:
     MI_BD = 'gestionbiblioteca'
     TABLA = 'autor'
-    # CONEXION_CONFIG = psycopg2.connect(user='postgres', password='admin', host='127.0.0.1', port='5432',
-                                      # database=MI_BD)
 
     @classmethod
     def nuevo_autor(cls, autor):
