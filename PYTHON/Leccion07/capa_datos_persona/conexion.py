@@ -1,7 +1,9 @@
-#psycopg2 as db (esta es otra manera de importar)
+# psycopg2 as db (esta es otra manera de importar)
 import psycopg2 as bd
 from logger_base import log
 import sys
+
+
 class Conexion:
     _DATABASE = 'test_bd'
     _USERNAME = 'postgres'
@@ -28,9 +30,6 @@ class Conexion:
         else:
             return cls._conexion
 
-
-
-
     @classmethod
     def obtenerCursor(cls):
         if cls._cursor is None:
@@ -43,6 +42,7 @@ class Conexion:
                 sys.exit()
         else:
             return cls._cursor
+
 
 if __name__ == '__main__':
     Conexion.obtenerConexion()
