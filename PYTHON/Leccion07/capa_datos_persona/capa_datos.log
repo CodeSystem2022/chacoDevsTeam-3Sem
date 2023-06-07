@@ -50,3 +50,97 @@
             Apellido: Ramos,
             Email: homeror@mail.com
         
+11:01:28 PM:DEBUG[conexion.py:25] Conexion Exitosa: <connection object at 0x000001F8FD631690; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:01:28 PM:DEBUG[conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001F8FF4C57E0; closed: 0>
+11:01:28 PM:DEBUG[persona_dao.py:40] Los objetos eliminados  son: 
+            Id Persona: 3,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
+11:01:28 PM:DEBUG[persona_dao.py:48] Personas eliminadas: 1
+11:03:09 PM:DEBUG[conexion.py:25] Conexion Exitosa: <connection object at 0x000001D723821690; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:03:09 PM:DEBUG[conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001D7256997E0; closed: 0>
+11:03:09 PM:DEBUG[persona_dao.py:40] Los objetos eliminados  son: 
+            Id Persona: 8,
+            Nombre: None,
+            Apellido: None,
+            Email: None
+        
+11:03:09 PM:DEBUG[persona_dao.py:48] Personas eliminadas: 1
+11:04:55 PM:DEBUG[conexion.py:25] Conexion Exitosa: <connection object at 0x0000021EF0D71690; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:04:55 PM:DEBUG[conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x0000021EF2BE97E0; closed: 0>
+11:04:55 PM:DEBUG[persona_dao.py:52] 
+            Id Persona: 1,
+            Nombre: Juan Carlos,
+            Apellido: Perez,
+            Email: jcperez@mail.com
+        
+11:04:55 PM:DEBUG[persona_dao.py:52] 
+            Id Persona: 2,
+            Nombre: Carla,
+            Apellido: Gomez,
+            Email: kgomez@mail.com
+        
+11:04:55 PM:DEBUG[persona_dao.py:52] 
+            Id Persona: 4,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: jperez@mail.com
+        
+11:04:55 PM:DEBUG[persona_dao.py:52] 
+            Id Persona: 5,
+            Nombre: Romina,
+            Apellido: Ayala,
+            Email: ayala@mail.com
+        
+11:04:55 PM:DEBUG[persona_dao.py:52] 
+            Id Persona: 6,
+            Nombre: Marcelo,
+            Apellido: Cuenca,
+            Email: cuencaM@gmail.com
+        
+11:04:55 PM:DEBUG[persona_dao.py:52] 
+            Id Persona: 9,
+            Nombre: Jorge,
+            Apellido: Prol,
+            Email: jprol@gmail.com
+        
+11:07:25 PM:DEBUG[conexion.py:25] Conexion Exitosa: <connection object at 0x0000018439B71690; dsn: 'user=postgres password=xxx dbname=test_bd host=127.0.0.1 port=5432', closed: 0>
+11:07:25 PM:DEBUG[conexion.py:38] Se abrio correctamente el cursor: <cursor object at 0x000001843B9E97E0; closed: 0>
+11:07:25 PM:DEBUG[persona_dao.py:53] 
+            Id Persona: 1,
+            Nombre: Juan Carlos,
+            Apellido: Perez,
+            Email: jcperez@mail.com
+        
+11:07:25 PM:DEBUG[persona_dao.py:53] 
+            Id Persona: 2,
+            Nombre: Carla,
+            Apellido: Gomez,
+            Email: kgomez@mail.com
+        
+11:07:25 PM:DEBUG[persona_dao.py:53] 
+            Id Persona: 4,
+            Nombre: Juan,
+            Apellido: Perez,
+            Email: jperez@mail.com
+        
+11:07:25 PM:DEBUG[persona_dao.py:53] 
+            Id Persona: 5,
+            Nombre: Romina,
+            Apellido: Ayala,
+            Email: ayala@mail.com
+        
+11:07:25 PM:DEBUG[persona_dao.py:53] 
+            Id Persona: 6,
+            Nombre: Marcelo,
+            Apellido: Cuenca,
+            Email: cuencaM@gmail.com
+        
+11:07:25 PM:DEBUG[persona_dao.py:53] 
+            Id Persona: 9,
+            Nombre: Jorge,
+            Apellido: Prol,
+            Email: jprol@gmail.com
+        
