@@ -19,7 +19,7 @@ class PersonaDAO:
     _ELIMINAR = 'DELETE FROM persona WHERE id_persona=%s'
 
     # Definimos los metodos de clase
-    
+    @classmethod
     def seleccionar(cls):
         with Conexion.obtenerConexion():
             with Conexion.obtenerCursor() as cursor:
