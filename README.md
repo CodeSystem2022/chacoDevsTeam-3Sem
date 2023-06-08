@@ -78,11 +78,11 @@
  
  ## Octava Semana (Scrum master- Valdez, Carlos Federico.)
   
- ### Java - Interfaces
+ ### Java - [Interfaces](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-sexta-semana-interfaces.)
  
- ### JavaScript - Clases Segunda parte
+ ### JavaScript - [Clases Segunda parte](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-septima-semana-Clases-segunda-parte)
  
- ### Python - Capa de datos: Logging y PostgreSQL Parte 1
+ ### Python - [Capa de datos: Logging y PostgreSQL Parte 1](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-septima-semana-Capa-de-datos:-Logging-y-PostgreSQL-Parte-1)
  
  ## Novena Semana (Scrum master- Gutierrez, Juan Carlos.)
   
