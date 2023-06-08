@@ -98,7 +98,7 @@
  
  ### JavaScript - Herencia
  
- ### Python - Capa de Datos Parte 3
+ ### Python - [Capa de Datos Parte 3](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Python---Capa-de-Datos-Parte-3)
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
