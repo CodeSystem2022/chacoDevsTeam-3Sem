@@ -26,4 +26,4 @@ class Empleado extends Persona{
         ${this._idEmpleado} 
         ${this._sueldo}`;
     }
-}
+}     
