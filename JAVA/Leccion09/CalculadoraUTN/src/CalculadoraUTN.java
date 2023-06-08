@@ -20,8 +20,34 @@ public class CalculadoraUTN {
             var operando1 = Integer.parseInt(entrada.nextLine());
             System.out.print("Digite el valor para el operando2: ");
             var operando2 = Integer.parseInt(entrada.nextLine());
+            
+            int resultado;
+            switch(operacion){
+                case 1 ->{ //Suma
+                    resultado = operando1 + operando2;
+                    System.out.println("Resultado de la suma: "+resultado);
+                }
+                case 2 ->{ //Resta
+                    resultado = operando1 - operando2;
+                    System.out.println("Resultado de la resta: "+resultado);
+                }
+                case 3 ->{ //Division
+                    resultado = operando1 * operando2; 
+                    System.out.println("Resultado de la division: "+resultado);
+                }
+                case 4 ->{ //Multiplicacion
+                    resultado = operando1 / operando2;
+                    System.out.println("Resultado de la multiplicacion: "+resultado);
+                }
+                default -> System.out.println("Operacion erronea: "+operacion);
+            } //Fin switch
 
+        } //Fin del if 
+        else if(operacion == 5){
+            System.out.println("Hasta Pronto...");
         }
-
-    }
-}
+        else{
+            System.out.println("Opcion erronea: "+operacion);
+        }
+    } // Fin del main 
+} // Fin clase 
