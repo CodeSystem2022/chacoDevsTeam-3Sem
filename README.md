@@ -94,7 +94,7 @@
  
  ## Décima Semana (Scrum master- Espinola, Renzo.)
   
- ### Java
+ ### Java - Proyecto: CalculadoraUTN
  
  ### JavaScript - Herencia
  
