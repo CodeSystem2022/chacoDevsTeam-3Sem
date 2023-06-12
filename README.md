@@ -104,9 +104,9 @@
   
  ### Java - 
  
- ### JavaScript - 
+ ### JavaScript - Proyecto Ventas
  
- ### Python -
+ ### Python - Pool de conexiones con Python y Postgresql
  
  ## Décimo segunda Semana (Scrum master- Gutierrez, Alejo H. )
   
