@@ -100,5 +100,21 @@
  
  ### Python - [Capa de Datos Parte 3](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Python---Capa-de-Datos-Parte-3)
  
+  ## Décimo primera Semana (Scrum master- )
+  
+ ### Java - 
+ 
+ ### JavaScript - 
+ 
+ ### Python -
+ 
+ ## Décimo segunda Semana (Scrum master- Gutierrez, Alejo H. )
+  
+ ### Java - 
+ 
+ ### JavaScript - 
+ 
+ ### Python -
+ 
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
