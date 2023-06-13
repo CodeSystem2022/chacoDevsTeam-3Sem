@@ -94,11 +94,27 @@
  
  ## Décima Semana (Scrum master- Espinola, Renzo.)
   
- ### Java - Proyecto: CalculadoraUTN
+ ### Java - [Proyecto: CalculadoraUTN](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-octava-semana-Proyecto:-CalculadoraUTN)
  
- ### JavaScript - Herencia
+ ### JavaScript - [Herencia](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-novena-semana-Herencia)
  
  ### Python - [Capa de Datos Parte 3](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Python---Capa-de-Datos-Parte-3)
+ 
+  ## Décimo primera Semana (Scrum master- Gutierrez, Agustin Rene)
+  
+ ### Java - 
+ 
+ ### JavaScript - Proyecto Ventas
+ 
+ ### Python - Pool de conexiones con Python y Postgresql
+ 
+ ## Décimo segunda Semana (Scrum master- Gutierrez, Alejo H. )
+  
+ ### Java - 
+ 
+ ### JavaScript - 
+ 
+ ### Python -
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki

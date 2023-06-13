@@ -26,7 +26,4 @@ class Empleado extends Persona{
         ${this._idEmpleado} 
         ${this._sueldo}`;
     }
-}
-
-empleado1 = new Empleado("Alejo","Gutierrez",25,250000);
-console.log(empleado1);
+}     
