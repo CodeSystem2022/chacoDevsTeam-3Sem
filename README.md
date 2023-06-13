@@ -100,7 +100,7 @@
  
  ### Python - [Capa de Datos Parte 3](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Python---Capa-de-Datos-Parte-3)
  
-  ## Décimo primera Semana (Scrum master- Gutierrez, Agustin Rene)
+  ## Décimo primera Semana (Scrum master- )
   
  ### Java - 
  
