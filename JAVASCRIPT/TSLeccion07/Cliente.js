@@ -25,3 +25,6 @@ class Cliente extends Persona{
     }
     }
 
+    cliente1 = new Cliente("Natalia","Gutierrez",35, new Date());
+    console.log(cliente1);
+

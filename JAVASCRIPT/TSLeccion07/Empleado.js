@@ -8,7 +8,7 @@ class Empleado extends Persona{
         this._sueldo = sueldo;
     }
 
-    get _idEmpleado(){
+    get idEmpleado(){
         return this._idEmpleado;
     }
 
@@ -26,4 +26,7 @@ class Empleado extends Persona{
         ${this._idEmpleado} 
         ${this._sueldo}`;
     }
-}     
+}
+
+empleado1 = new Empleado("Alejo","Gutierrez",25,250000);
+console.log(empleado1);

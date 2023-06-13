@@ -41,3 +41,6 @@ class Persona{
         ${this._edad}`;
     }
 }
+
+persona1 = new Persona("Federico","Valdez",30);
+console.log(persona1)
