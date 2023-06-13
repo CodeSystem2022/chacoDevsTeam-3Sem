@@ -1,4 +1,4 @@
-from domain.persona import Persona
+from GestionBiblioteca.domain.persona import Persona
 
 
 class Socio(Persona):
