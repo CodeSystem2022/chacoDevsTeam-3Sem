@@ -12,8 +12,10 @@ class ABMLibro:
         conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion.cursor() as cursor:
-                sentencia = f'INSERT INTO {cls.TABLA} (titulo, genero, anio_publicacion, isbn, autor_id, cantidad) VALUES (%s, %s, %s, %s, %s, %s)'
-                valores = (libro.titulo, libro.genero, libro.anio_publicacion, libro.isbn, libro.autor_id, libro.cantidad)
+                sentencia = f'INSERT INTO {cls.TABLA} (titulo, genero, anio_publicacion, isbn, autor_id, cantidad, editorial) ' \
+                            f'VALUES (%s, %s, %s, %s, %s, %s, %s)'
+                valores = (libro.titulo, libro.genero, libro.anio_publicacion, libro.isbn, libro.autor_id,
+                           libro.cantidad, libro.editorial)
                 cursor.execute(sentencia, valores)
                 registros_insertados = cursor.rowcount
                 print(f'Los registros insertados son: {registros_insertados}')
@@ -29,7 +31,8 @@ class ABMLibro:
         try:
             with conexion:
                 with conexion.cursor() as cursor:
-                    sentencia = f'SELECT titulo, genero, autor.nombre, anio_publicacion, isbn FROM {cls.TABLA} JOIN autor ON libro.autor_id = autor.id_autor WHERE id_libro = %s '
+                    sentencia = f'SELECT titulo, genero, autor.nombre, anio_publicacion, isbn, editorial FROM {cls.TABLA} ' \
+                                f'JOIN autor ON libro.autor_id = autor.id_autor WHERE id_libro = %s '
                     cursor.execute(sentencia, (id_libro,))
                     registros = cursor.fetchone()
                     print(registros)
@@ -43,7 +46,8 @@ class ABMLibro:
         try:
             with conexion:
                 with conexion.cursor() as cursor:
-                    sentencia = f'SELECT titulo, genero, autor.nombre, anio_publicacion, isbn, cantidad FROM {cls.TABLA} JOIN autor ON libro.autor_id = autor.id_autor'
+                    sentencia = f'SELECT titulo, genero, autor.nombre, anio_publicacion, isbn, cantidad, editorial FROM {cls.TABLA}' \
+                                f' JOIN autor ON libro.autor_id = autor.id_autor'
                     cursor.execute(sentencia)
                     registros = cursor.fetchall()
                     for registro in registros:
@@ -73,8 +77,10 @@ class ABMLibro:
         conexion = db.DatabaseManager.obtenerConexion()
         try:
             with conexion.cursor() as cursor:
-                sentencia = f'UPDATE {cls.TABLA} SET titulo=%s, genero= %s, anio_publicacion=%s, isbn=%s, autor_id=%s WHERE id_libro=%s'
-                valores = (libro.titulo, libro.genero, libro.anio_publicacion, libro.isbn, libro.autor_id, id_libro)
+                sentencia = f'UPDATE {cls.TABLA} SET titulo=%s, genero= %s, anio_publicacion=%s, isbn=%s, autor_id=%s, ' \
+                            f'editorial = %s WHERE id_libro=%s'
+                valores = (libro.titulo, libro.genero, libro.anio_publicacion, libro.isbn, libro.autor_id,
+                           libro.editorial, id_libro)
                 cursor.execute(sentencia, valores)
                 registros_actualizados = cursor.rowcount
                 print(f'Los registros actualizados son: {registros_actualizados}')

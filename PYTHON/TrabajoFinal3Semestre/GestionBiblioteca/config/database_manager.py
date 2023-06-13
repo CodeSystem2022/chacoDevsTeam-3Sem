@@ -80,8 +80,9 @@ class DatabaseManager:
         try:
             manager.crear_tabla(nombre_tabla="LIBRO",
                                 columnas="id_libro SERIAL PRIMARY KEY, titulo VARCHAR(50), genero VARCHAR(50), "
-                                         "autor VARCHAR(50), anio_publicacion INT, isbn VARCHAR(50), cantidad INT,"
-                                         " autor_id INT, FOREIGN KEY (autor_id) REFERENCES AUTOR (id_autor)")
+                                         "autor VARCHAR(50), anio_publicacion INT, isbn VARCHAR(50), cantidad INT, "
+                                         "editorial VARCHAR(255), autor_id INT, FOREIGN KEY (autor_id) "
+                                         "REFERENCES AUTOR (id_autor)")
         except Exception as e:
             if str(e) == 'relation "libro" already exists\n':
                 print("Tabla libro estado: OK")
