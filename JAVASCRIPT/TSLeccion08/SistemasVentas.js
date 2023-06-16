@@ -26,30 +26,40 @@ class Producto{
 }//Fin de la clase Producto
 
 class Orden{
+    productos = [];
     static contadorOrdenes = 0;
-    static getMAX_PRODUCTOS(){
-        return 5;
-    }
-
+    static MAX_PRODUCTOS = 5;
+    
     constructor(){
         this._idOrden = ++Orden.contadorOrdenes;
-        this._productos = [];
-        this._contadorProductosAgregados = 0;
-    }
-
-    get idOrden(){
-        return this._idOrden;
     }
 
     agregarProducto(producto){
-        if(this._productos.length < Orden.getMAX_PRODUCTOS()){
-            this._productos.push(producto);//Tenemos 2 tipos de sintaxis: 1
-            //this._productos[this._contadorProductosAgregados++] = producto; //segunda sintaxis
+        if ((this.productos.length+1)<=Orden.MAX_PRODUCTOS){
+            this.productos.push(producto);
+            
         }else{
-            console.log('No se pueden agregar mas productos');
+            console.log("SUPERO EL LIMITE: no se agrego el Producto: "+ producto);
         }
-    }//Fin del método agregarProducto
-}//Fin de la clase Orden
+    }
+
+    calcularTotal(){
+        let total=0;
+        for(let prod of this.productos){
+            total+=prod.precio;
+        }
+        return total;
+    }
+    
+    mostrarOrden(){
+        console.log("Nro Orden: "+this._idOrden);
+        for(let prod of this.productos){
+            console.log("Producto: "+ prod.nombre + " $ "+ prod.precio);
+        }
+        console.log("Total: $"+this.calcularTotal());
+    }
+   
+}
 
 let producto1 = new Producto('Pantalón', 200);
 let producto2 = new Producto('Camisa', 150);
