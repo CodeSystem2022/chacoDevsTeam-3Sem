@@ -102,7 +102,7 @@
  
   ## Décimo primera Semana (Scrum master- Gutierrez, Agustin Rene)
   
- ### Java - 
+ ### Java - Proyecto Listar Personas
  
  ### JavaScript - Proyecto Ventas
  
