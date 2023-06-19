@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ListadoPersonasApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
         Scanner entrada = new Scanner(System.in);
         //Definimos la lista fuera del ciclo while
         List<Persona> personas = new ArrayList<>();
@@ -35,7 +34,7 @@ public class ListadoPersonasApp {
         System.out.print("Digite una de las opciones: ");
     }//Fin metodo mostrarMenu
 
-    private static bollean ejecutarOperacion(Scanner entrada, List<Persona> personas) {
+    private static boolean ejecutarOperacion(Scanner entrada, List<Persona> personas) {
         var opcion = Integer.parseInt(entrada.nextLine());
         var salir = false;
         // revisamos la opcion digitada a travez de un Switch
@@ -58,7 +57,14 @@ public class ListadoPersonasApp {
                 //mejoras con lambda y el metodo de referencia
                 //personas.forEach((persona)-> System.out.println(persona));
                 personas.forEach(System.out::println);
-            }
-        }
-    }//fin del metodo ejecutarOperacion
-}//Fin de la clase ListadoPersonasApp
+            }//Fin caso 2
+            case 3 -> {//Salir del ciclo
+                System.out.println("Hasta Pronto.");
+                salir = true;
+            }//Fin del caso 3
+            default -> System.out.println("Opcion incorrecta: "+opcion);
+        }//Fin del switch
+        return salir;
+    }//Fin del metodo ejecutarOperacion
+
+}// Fin de la clase ListadoPersonasApp
