@@ -9,6 +9,7 @@ def mostrar_menu_socio():
     print('5.--> Volver')
     print("************************************")
 
+
 def mostrar_menu_autor():
     print("************************************")
     print('             ABM AUTOR              ')
@@ -19,6 +20,7 @@ def mostrar_menu_autor():
     print('4.--> Modificar un autor')
     print('5.--> Volver')
     print("************************************")
+
 
 def mostrar_menu_libro():
     print("************************************")
@@ -32,6 +34,7 @@ def mostrar_menu_libro():
     print('6.--> Volver')
     print("************************************")
 
+
 def mostrar_menu_principal_abm1():
     print("************************************")
     print('         GESTION BIBLIOTECA         ')
@@ -42,6 +45,7 @@ def mostrar_menu_principal_abm1():
     print('4.--> Volver')
     print("************************************")
 
+
 def mostrar_menu_principal():
     print("*******************************************")
     print('            GESTION BIBLIOTECA             ')
@@ -50,6 +54,7 @@ def mostrar_menu_principal():
     print("2.--> Retiro/Devolución libros")
     print('3.--> Salir')
     print("*******************************************")
+
 
 def mostrar_menu_solicitud():
     print("************************************")
@@ -60,4 +65,3 @@ def mostrar_menu_solicitud():
     print('3.--> VOLVER')
     print("************************************")
 
-mostrar_menu_libro()

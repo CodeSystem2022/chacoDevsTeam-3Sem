@@ -6,6 +6,7 @@ from service.service_libro import service_libro
 from ui.ui import mostrar_menu_principal, mostrar_menu_solicitud
 from config.database_manager import DatabaseManager
 
+
 def inicio():
     try:
         DatabaseManager.inicializar()
