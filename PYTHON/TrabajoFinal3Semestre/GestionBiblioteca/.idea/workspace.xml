@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baf27ed4-fad0-4870-a4a1-e049ec0c8047" name="Changes" comment="" />
+    <list default="true" id="baf27ed4-fad0-4870-a4a1-e049ec0c8047" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Leccion07/capa_datos_persona/capa_datos.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core_autor.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/core_autor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core_libro.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/core_libro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core_socio.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/core_socio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/core_solicitud.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/core_solicitud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/autor.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/autor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/solicitud.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/solicitud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/service_solicitud.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_solicitud.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/capa_datos.log" beforeDir="false" afterPath="$PROJECT_DIR$/test/capa_datos.log" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="D:/UTN/Desktop viejo/3Semestre/chacoDevsTeam-3Sem/PYTHON/TrabajoFinal3Semestre/GestionBiblioteca" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -86,14 +97,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_gestion_biblioteca.py</url>
-          <line>63</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/core/core_libro.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/test/test_gestion_biblioteca.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/core/core_socio.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/service_solicitud.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/service_solicitud.py</url>
+          <line>50</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/service/service_solicitud.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

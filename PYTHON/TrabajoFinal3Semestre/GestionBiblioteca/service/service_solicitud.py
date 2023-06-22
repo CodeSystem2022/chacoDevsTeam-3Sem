@@ -50,7 +50,7 @@ class SolicitudService:
                         registro_socio = cls.buscar_socio()
                         core_solicitud.ABMSolicitud.listar_solicitud_socio(registro_socio)
                     elif opcion2 == "2":
-                        print("HISTORIAL SOLICIUTDES GENERAL")
+                        print("HISTORIAL SOLICITUDES GENERAL")
                         core_solicitud.ABMSolicitud.listar_solicitudes()
                 else:
                     print(f'Volviendo...')

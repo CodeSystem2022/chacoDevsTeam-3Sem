@@ -8,7 +8,7 @@ class Autor(Persona):
         self._libros_publicados = libros_publicados
         self._libros_escritos = libros_escritos
 
-    def _str_(self):
+    def __str__(self):
         return f'Autor [ Datos: nombre: {super().nombre} apellido: {super().apellido} ' \
                f'Libros Publicados: {self._libros_publicados} ' \
                f'Libros Escritos: {self._libros_escritos}] '
