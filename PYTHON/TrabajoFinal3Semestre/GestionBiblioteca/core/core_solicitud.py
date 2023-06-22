@@ -33,11 +33,14 @@ class ABMSolicitud:
                                 f'sol.libro_id = l.id_libro JOIN socio s ON sol.socio_id = s.id_socio where estado = %s '
                     cursor.execute(sentencia, estados_libros.EstadoLibro.NO_DEVUELTO.value)
                     registros = cursor.fetchall()
-                    for registro in registros:
-                        fecha_solicitud = registro[0]
-                        fecha_solicitud_formateada = fecha_solicitud.strftime('%d/%m/%Y')
-                        nuevo_registro = (fecha_solicitud_formateada, registro[1], registro[2])
-                        print(nuevo_registro)
+                    if len(registros) > 0:
+                        for registro in registros:
+                            fecha_solicitud = registro[0]
+                            fecha_solicitud_formateada = fecha_solicitud.strftime('%d/%m/%Y')
+                            nuevo_registro = (fecha_solicitud_formateada, registro[1], registro[2])
+                            print(nuevo_registro)
+                    else:
+                        print(f'No existen registros cargados')
         except Exception as e:
             print(f'Ocurrio un error {e}')
             logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -113,10 +116,13 @@ class ABMSolicitud:
                                 f'AND socio_id = %s'
                     cursor.execute(sentencia, (estados_libros.EstadoLibro.NO_DEVUELTO.value, socio_id))
                     registros = cursor.fetchall()
-                    for registro in registros:
-                        fecha_solicitud = registro[0]
-                        fecha_solicitud_formateada = fecha_solicitud.strftime('%d/%m/%Y')
-                        nuevo_registro = (fecha_solicitud_formateada, registro[1], registro[2])
-                        print(nuevo_registro)
+                    if len(registros) > 0:
+                        for registro in registros:
+                            fecha_solicitud = registro[0]
+                            fecha_solicitud_formateada = fecha_solicitud.strftime('%d/%m/%Y')
+                            nuevo_registro = (fecha_solicitud_formateada, registro[1], registro[2])
+                            print(nuevo_registro)
+                    else:
+                        print(f'No existen registros cargados')
         except Exception as e:
             print(f'Ocurrio un error {e}')

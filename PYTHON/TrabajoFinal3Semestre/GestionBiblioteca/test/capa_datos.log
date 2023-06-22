@@ -1,0 +1,5 @@
+01:04:35 AM:INFO [core_socio.py:20] Los registros insertados son: 1
+01:05:20 AM:INFO [core_autor.py:21] Los registros insertados son: 1
+01:12:16 AM:ERROR [core_autor.py:82] OCURRIO UN ERROR 'KeyboardInterrupt' object is not callable
+01:12:16 AM:ERROR [service_autor.py:44] OCURRIO UN ERROR 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+01:16:29 AM:ERROR [core_libro.py:60] OCURRIO UN ERROR '>' not supported between instances of 'list' and 'int'

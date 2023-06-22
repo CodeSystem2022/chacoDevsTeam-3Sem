@@ -74,8 +74,11 @@ class ABMAutor:
                     sentencia = f'SELECT * FROM {cls.TABLA}'
                     cursor.execute(sentencia)
                     registros = cursor.fetchall()
-                    for registro in registros:
-                        print(registro)
+                    if len(registros) > 0:
+                        for registro in registros:
+                            print(registro)
+                    else:
+                        print(f'No existen registros cargados')
         except Exception as e:
             print(f'Ocurrio un error {e}')
             logger_base.log.error(f'OCURRIO UN ERROR {e}')
