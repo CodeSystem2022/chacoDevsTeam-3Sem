@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baf27ed4-fad0-4870-a4a1-e049ec0c8047" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/domain/solicitud.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/date_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/TrabajoFinal3Semestre.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/GestionBiblioteca.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GestionBiblioteca.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UML/Enum/estados_libro.py" beforeDir="false" afterPath="$PROJECT_DIR$/enums/estados_libros.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/autor.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/autor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/socio.py" beforeDir="false" afterPath="$PROJECT_DIR$/domain/socio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/service_autor.py" beforeDir="false" afterPath="$PROJECT_DIR$/service/service_autor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_gestion_biblioteca.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_gestion_biblioteca.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/ui/ui.py" afterDir="false" />
-    </list>
+    <list default="true" id="baf27ed4-fad0-4870-a4a1-e049ec0c8047" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
