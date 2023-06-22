@@ -1,8 +1,7 @@
-from GestionBiblioteca.core import core_autor
-from GestionBiblioteca.domain.autor import Autor as Autor
-from GestionBiblioteca.ui.ui import mostrar_menu_autor as ui
-import GestionBiblioteca.config.logger_base as logger_base
-
+from core import core_autor
+from domain.autor import Autor
+from ui.ui import mostrar_menu_autor as ui
+import config.logger_base as logger_base
 
 
 def service_autor():
@@ -37,8 +36,8 @@ def service_autor():
                 apellido_autor = input('Apellido: ')
                 libros_publicados = int(input('Ingrese cantidad de libros publicados: '))
                 libro_escrito = input('ingrese los libros escrito: ')
-                autor1 = Autor( nombre_autor, apellido_autor, libros_publicados, libro_escrito)
-                core_autor.ABMAutor.modificar_autor(autor1,id_autor)
+                autor1 = Autor(nombre_autor, apellido_autor, libros_publicados, libro_escrito)
+                core_autor.ABMAutor.modificar_autor(autor1, id_autor)
         except Exception as e:
             print(f'Ocurrio un error de tipo: {e}')
             opcion = None

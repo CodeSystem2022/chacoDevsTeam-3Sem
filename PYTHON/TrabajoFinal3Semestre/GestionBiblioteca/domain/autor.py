@@ -1,4 +1,4 @@
-from GestionBiblioteca.domain.persona import Persona
+from domain.persona import Persona
 
 
 class Autor(Persona):
