@@ -26,7 +26,7 @@ def service_libro():
                     anio_publicacion = int(input('anio de publicacion: '))
                     cantidad = int(input('Cantidad de copias: '))
                     editorial = input('Editorial: ')
-                    metodo = int(input("AUTOR\nDebe ingresar un modo de registro\n1: Nombre: \n2: Apellido: \n3: id:"))
+                    metodo = int(input("************************************\n\t\t\t\tAUTOR\nDebe ingresar un modo de registro\n1: Nombre: \n2: Apellido: \n3: id: \n************************************\n"))
                     if metodo == 1:
                         ingreso = input("Nombre de Autor: ")
                         registro = core_autor.ABMAutor.buscar_autor_por_nombre(ingreso)
