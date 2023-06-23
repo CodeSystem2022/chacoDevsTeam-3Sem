@@ -13,10 +13,10 @@ class SolicitudService:
     def service_solicitud_alta(cls):
         opcion = ""
         while opcion != "3":
-            opcion = input("1. Registrar una solicitud de un libro:\n2. Listar Solicitudes:\n3. Volver ")
+            opcion = input("1. Registrar una solicitud de un libro:\n2. Listar Solicitudes:\n3. Volver \n")
             if opcion == "1":
                 try:
-                    print('SOLICITUD DE LIBRO: ')
+                    print('**********************************\n\t\t SOLICITUD DE LIBRO \n**********************************')
                     registro_libro = cls.buscar_libro()
                     if registro_libro is not None:
                         cantidad = core_libro.ABMLibro.buscar_cantidad_libro_por_id(registro_libro)
@@ -44,7 +44,7 @@ class SolicitudService:
             elif opcion == "2":
                 opcion2 = None
                 while opcion2 != "3":
-                    opcion2 = input("1. Listar por socio:\n2. Listar general:\n3. Volver ")
+                    opcion2 = input("1. Listar por socio:\n2. Listar general:\n3. Volver \n")
                     if opcion2 == "1":
                         print("HISTORIAL SOLICITUDES SOCIO: ")
                         registro_socio = cls.buscar_socio()
@@ -97,7 +97,7 @@ class SolicitudService:
     @classmethod
     def buscar_socio(cls):
         print('Ingrese los siguientes datos:')
-        socio = int(input("SOCIO:\nIngrese un modo de busqueda de SOCIO\n1: Nombre: \n2: Apellido: \n3: id:"))
+        socio = int(input("SOCIO:\nIngrese un modo de busqueda de SOCIO\n1: Nombre: \n2: Apellido: \n3: id: "))
         if socio == 1:
             ingreso = input("NOMBRE: ")
             registro_socio = core_socio.ABMSocio.buscar_socio_por_nombre(ingreso)
@@ -125,7 +125,7 @@ class SolicitudService:
 
     @classmethod
     def buscar_libro(cls):
-        libro = int(input("LIBRO\nDebe ingresar un modo de registro\n1: Titulo: \n2: ISBN: \n3: id:"))
+        libro = int(input("\t\t\t\tLIBRO\nDebe ingresar un modo de registro\n1: Titulo: \n2: ISBN: \n3: id: \n**********************************\n"))
         if libro == 1:
             ingreso = input("Titulo: ")
             registro_libro = core_libro.ABMLibro.buscar_libro_por_titulo(ingreso)
