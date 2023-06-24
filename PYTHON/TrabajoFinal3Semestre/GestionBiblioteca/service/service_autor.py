@@ -1,6 +1,6 @@
 from core import core_autor
 from domain.autor import Autor
-from ui.ui import mostrar_menu_autor as ui
+from ui.ui import mostrar_menu_autor as ui_autor
 import config.logger_base as logger_base
 
 
@@ -8,36 +8,52 @@ def service_autor():
     opcion = None
     while opcion != 5:
         try:
-            ui()
+            ui_autor()
             opcion = int(input('Digite una opcion de menu (1-5):'))
 
             if opcion == 1:
-                print('NUEVO AUTOR: ')
+                print("*" * 50)
+                print('NUEVO AUTOR'.center(50))
+                print("*" * 50)
                 print('Ingrese los siguientes datos:')
                 nombre_autor = input('Nombre: ')
                 apellido_autor = input('Apellido: ')
                 libros_publicados = int(input('Ingrese cantidad de libros publicados: '))
                 libro_escrito = input('ingrese los libros escrito: ')
-                autor1 = Autor(nombre_autor, apellido_autor, libros_publicados, libro_escrito)
+                print("*" * 50)
+                autor1 = Autor(nombre_autor, apellido_autor, 0, 0, None, None, libros_publicados, libro_escrito)
                 core_autor.ABMAutor.nuevo_autor(autor1)
                 print(autor1)
+                print("*" * 50)
             elif opcion == 2:
-                print('LISTADO DE AUTORES: ')
+                print("*" * 50)
+                print('LISTADO DE AUTORES'.center(50))
+                print("*" * 50)
                 core_autor.ABMAutor.listar_autor()
+                print("*" * 50)
             elif opcion == 3:
-                print('BAJA AUTOR:')
+                print("*" * 50)
+                print('BAJA AUTOR'.center(50))
+                print("*" * 50)
                 id_autor = int(input('Ingrese el id del autor: '))
                 core_autor.ABMAutor.borrar_autor(id_autor)
+                print("*" * 50)
             elif opcion == 4:
-                print('MODIFICAR DATOS DE AUTOR: ')
+                print("*" * 50)
+                print('MODIFICAR DATOS DE AUTOR'.center(50))
+                print("*" * 50)
                 id_autor = int(input('Ingrese el id del autor: '))
                 core_autor.ABMAutor.buscar_autor(id_autor)
                 nombre_autor = input('Nombre: ')
                 apellido_autor = input('Apellido: ')
                 libros_publicados = int(input('Ingrese cantidad de libros publicados: '))
                 libro_escrito = input('ingrese los libros escrito: ')
-                autor1 = Autor(nombre_autor, apellido_autor, libros_publicados, libro_escrito)
+                print("*" * 50)
+                autor1 = Autor(nombre_autor, apellido_autor, 0, 0, None, None, libros_publicados, libro_escrito)
                 core_autor.ABMAutor.modificar_autor(autor1, id_autor)
+                print("*" * 50)
+            elif opcion < 0 or opcion > 5:
+                print("Opción inválida. Por favor, elige una opción válida.")
         except Exception as e:
             print(f'Ocurrio un error de tipo: {e}')
             opcion = None
