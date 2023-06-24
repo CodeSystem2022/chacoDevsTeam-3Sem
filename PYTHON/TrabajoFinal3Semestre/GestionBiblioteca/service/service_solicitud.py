@@ -69,11 +69,11 @@ class SolicitudService:
                         core_solicitud.ABMSolicitud.listar_solicitudes()
                         print("*" * 50)
                     elif int(opcion2) < 1 or int(opcion2)>3:
-                        print("Opción inválida. Por favor, elige una opción válida.");
+                        print("Opción inválida. Por favor, elige una opción válida.")
                 else:
                     print(f'Volviendo...')
             elif int(opcion) > 3 or int(opcion) < 1:
-                print("Opción inválida. Por favor, elige una opción válida.");
+                print("Opción inválida. Por favor, elige una opción válida.")
         else:
             print(f'Volviendo...')
 
