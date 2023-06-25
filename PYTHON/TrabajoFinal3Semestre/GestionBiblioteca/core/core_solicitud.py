@@ -9,7 +9,7 @@ class ABMSolicitud:
 
     @classmethod
     def nueva_solicitud(cls, solicitud):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'INSERT INTO {cls.TABLA} (libro_id, socio_id, fecha_solicitud, estado) VALUES (%s, %s, %s, %s)'
@@ -25,7 +25,7 @@ class ABMSolicitud:
 
     @classmethod
     def listar_solicitudes(cls):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -47,7 +47,7 @@ class ABMSolicitud:
 
     @classmethod
     def listar_solicitudes_por_id(cls, id_socio, id_libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -70,7 +70,7 @@ class ABMSolicitud:
 
     @classmethod
     def listar_devolucion(cls):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -88,7 +88,7 @@ class ABMSolicitud:
 
     @classmethod
     def listar_devolucion_socio(cls, socio_id):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -107,7 +107,7 @@ class ABMSolicitud:
 
     @classmethod
     def listar_solicitud_socio(cls, socio_id):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:

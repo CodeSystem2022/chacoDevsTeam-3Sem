@@ -30,8 +30,8 @@ class DatabaseManager:
     @classmethod
     def crear_tabla(cls, nombre_tabla, columnas):
         # Establecer conexión con la base de datos
-        conn = cls.obtenerConexion()
-        cursor = cls.obtenerCursor()
+        conn = cls.obtener_conexion()
+        cursor = cls.obtener_cursor()
         with conn:
             with conn.cursor() as cursor:
                 # Verificar si la tabla ya existe
@@ -46,16 +46,16 @@ class DatabaseManager:
                     logger_base.log.info(f"Se creo tabla '{nombre_tabla}' en la base de datos '{cls._DATABASE}'.")
                     conn.commit()
 
-
     @classmethod
     def inicializar(cls):
         manager = DatabaseManager()
         try:
+            print('*' * 50)
+            print('CONFIGURACION'.center(50))
+            print('*' * 50)
             manager.crear_basedatos()
         except Exception as e:
             if str(e) == 'database "gestionbiblioteca" already exists\n':
-                print('*'*50)
-                print('CONFIGURACION'.center(50))
                 print("Base de datos estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -100,12 +100,12 @@ class DatabaseManager:
             if str(e) == 'relation "solicitud_libro" already exists\n':
                 print("Tabla solicitud_libro estado: OK")
                 print('*' * 50)
-                print('\n')
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
+        print('*' * 50)
 
     @classmethod
-    def obtenerConexion(cls):
+    def obtener_conexion(cls):
         if cls._CONEXION is None:
             try:
                 cls._CONEXION = bd.connect(host=cls._HOST,
@@ -122,10 +122,10 @@ class DatabaseManager:
             return cls._CONEXION
 
     @classmethod
-    def obtenerCursor(cls):
+    def obtener_cursor(cls):
         if cls._CURSOR is None:
             try:
-                cls._CURSOR = cls.obtenerConexion().cursor()
+                cls._CURSOR = cls.obtener_conexion().cursor()
                 logger_base.log.debug(f'Se abrio correctamente el cursor: {cls._CURSOR}')
                 return cls._CURSOR
             except Exception as e:

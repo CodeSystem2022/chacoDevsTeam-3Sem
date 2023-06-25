@@ -9,7 +9,7 @@ class ABMSocio:
 
     @classmethod
     def nuevo_socio(cls, socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'INSERT INTO {cls.TABLA} (dni, nombre, apellido, celular, domicilio, email) VALUES (%s, %s, %s, %s, %s, %s)'
@@ -25,7 +25,7 @@ class ABMSocio:
 
     @classmethod
     def buscar_socio(cls, id_socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -39,7 +39,7 @@ class ABMSocio:
 
     @classmethod
     def buscar_socio_por_nombre(cls, socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -53,7 +53,7 @@ class ABMSocio:
 
     @classmethod
     def buscar_socio_por_apellido(cls, socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -67,7 +67,7 @@ class ABMSocio:
 
     @classmethod
     def buscar_socio_por_id(cls, socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -82,7 +82,7 @@ class ABMSocio:
 
     @classmethod
     def listar_socios(cls):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -101,7 +101,7 @@ class ABMSocio:
 
     @classmethod
     def borrar_socio(cls, id_socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -117,7 +117,7 @@ class ABMSocio:
 
     @classmethod
     def modificar_socio(cls, socio, id_socio):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'UPDATE {cls.TABLA} SET dni=%s, nombre= %s, apellido=%s, celular=%s, domicilio=%s, email=%s WHERE id_socio=%s'

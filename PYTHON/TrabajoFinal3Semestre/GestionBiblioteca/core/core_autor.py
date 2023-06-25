@@ -8,7 +8,7 @@ class ABMAutor:
 
     @classmethod
     def nuevo_autor(cls, autor):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'INSERT INTO {cls.TABLA} (nombre, apellido, fecha_nacimiento, nacionalidad) ' \
@@ -24,7 +24,7 @@ class ABMAutor:
 
     @classmethod
     def buscar_autor(cls, id_autor):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -39,7 +39,7 @@ class ABMAutor:
 
     @classmethod
     def buscar_autor_por_nombre(cls, autor):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -53,7 +53,7 @@ class ABMAutor:
 
     @classmethod
     def buscar_autor_por_apellido(cls, autor):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -67,7 +67,7 @@ class ABMAutor:
 
     @classmethod
     def listar_autor(cls):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -85,7 +85,7 @@ class ABMAutor:
 
     @classmethod
     def borrar_autor(cls, id_autor):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -101,7 +101,7 @@ class ABMAutor:
 
     @classmethod
     def modificar_autor(cls, autor, id_autor):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'UPDATE {cls.TABLA} SET nombre= %s, apellido=%s, fecha_nacimiento=%s, nacionalidad=%s WHERE id_autor=%s'
