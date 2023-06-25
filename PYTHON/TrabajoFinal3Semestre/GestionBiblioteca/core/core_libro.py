@@ -9,7 +9,7 @@ class ABMLibro:
 
     @classmethod
     def nuevo_libro(cls, libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'INSERT INTO {cls.TABLA} (titulo, genero, anio_publicacion, isbn, autor_id, cantidad, editorial) ' \
@@ -27,7 +27,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_libro(cls, id_libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -42,7 +42,7 @@ class ABMLibro:
 
     @classmethod
     def listar_libros(cls):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -61,7 +61,7 @@ class ABMLibro:
 
     @classmethod
     def borrar_libro(cls, id_libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -77,7 +77,7 @@ class ABMLibro:
 
     @classmethod
     def modificar_libro(cls, libro, id_libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'UPDATE {cls.TABLA} SET titulo=%s, genero= %s, anio_publicacion=%s, isbn=%s, autor_id=%s, ' \
@@ -95,7 +95,7 @@ class ABMLibro:
 
     @classmethod
     def agregar_libro_existente(cls, cantidad, id_libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
                 sentencia = f'UPDATE {cls.TABLA} SET cantidad=%s WHERE id_libro=%s'
@@ -111,7 +111,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_libro_por_titulo(cls, titulo):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -125,7 +125,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_id_libro_por_id(cls, titulo):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -139,7 +139,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_libro_por_isbn(cls, isbn):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -153,7 +153,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_cantidad_libro_por_isbn(cls, isbn):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:
@@ -167,7 +167,7 @@ class ABMLibro:
 
     @classmethod
     def buscar_cantidad_libro_por_id(cls, id_libro):
-        conexion = db.DatabaseManager.obtenerConexion()
+        conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion:
                 with conexion.cursor() as cursor:

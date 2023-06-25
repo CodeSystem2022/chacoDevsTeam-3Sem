@@ -25,6 +25,7 @@ def service_autor():
                 core_autor.ABMAutor.nuevo_autor(autor1)
                 print(autor1)
                 print("*" * 50)
+                print("\n")
             elif opcion == 2:
                 print("*" * 50)
                 print('LISTADO DE AUTORES'.center(50))
