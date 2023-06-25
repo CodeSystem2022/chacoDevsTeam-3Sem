@@ -4,7 +4,7 @@
 
 # **Proyecto Integrador Gestion Biblioteca**
 
-Se acordo con el equipo a desarrollar otro tipo de aplicación  por la cual se opto  por un sistema de gestion de Biblioteca, en el cual podriamos explayar los conocimientos adquiridos en el transcurso del semestre.
+Se acordo con el equipo a desarrollar otro tipo de aplicación  por la cual se opto  por un sistema de gestion de Biblioteca, donde podriamos explayar los conocimientos adquiridos en el transcurso del semestre.
 
 # Estructura:
 
