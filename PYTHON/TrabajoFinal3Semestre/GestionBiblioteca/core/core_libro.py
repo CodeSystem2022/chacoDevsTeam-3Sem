@@ -46,7 +46,7 @@ class ABMLibro:
         try:
             with conexion:
                 with conexion.cursor() as cursor:
-                    sentencia = f'SELECT titulo, genero, autor.nombre, anio_publicacion, isbn, cantidad, editorial FROM {cls.TABLA}' \
+                    sentencia = f'SELECT id_libro, titulo, genero, autor.nombre, anio_publicacion, isbn, cantidad, editorial FROM {cls.TABLA}' \
                                 f' JOIN autor ON libro.autor_id = autor.id_autor'
                     cursor.execute(sentencia)
                     registros = cursor.fetchall()
