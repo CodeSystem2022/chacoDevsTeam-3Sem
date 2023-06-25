@@ -2,29 +2,29 @@ from domain.persona import Persona
 
 
 class Autor(Persona):
-    def __init__(self, nombre=None, apellido=None, dni=0, celular=0, domicilio=None, email=None, libros_publicados=None,
-                 libros_escritos=None):
+    def __init__(self, nombre=None, apellido=None, dni=0, celular=0, domicilio=None, email=None, fecha_nacimiento=None,
+                 nacionalidad=None):
         super().__init__(nombre, apellido, dni, celular, domicilio, email)
-        self._libros_publicados = libros_publicados
-        self._libros_escritos = libros_escritos
+        self._fecha_nacimiento = fecha_nacimiento
+        self._nacionalidad = nacionalidad
 
     def __str__(self):
-        return f'Autor [ Datos: nombre: {super().nombre} apellido: {super().apellido} ' \
-               f'Libros Publicados: {self._libros_publicados} ' \
-               f'Libros Escritos: {self._libros_escritos}] '
+        return f'Autor: Datos: nombre: {super().nombre} apellido: {super().apellido} ' \
+               f'Año Nacimiento: {self._fecha_nacimiento} ' \
+               f'Nacionalidad: {self._nacionalidad} '
 
     @property
-    def libros_publicados(self):
-        return self._libros_publicados
+    def fecha_nacimiento(self):
+        return self._fecha_nacimiento
 
-    @libros_publicados.setter
-    def libros_publicados(self, libros_publicados):
-        self._libros_publicados = libros_publicados
+    @fecha_nacimiento.setter
+    def fecha_nacimiento(self, fecha_nacimiento):
+        self._fecha_nacimiento = fecha_nacimiento
 
     @property
-    def libros_escritos(self):
-        return self._libros_escritos
+    def nacionalidad(self):
+        return self._nacionalidad
 
-    @libros_escritos.setter
-    def libros_escritos(self, libros_escritos):
-        self._libros_escritos = libros_escritos
+    @nacionalidad.setter
+    def nacionalidad(self,nacionalidad):
+        self._nacionalidad = nacionalidad

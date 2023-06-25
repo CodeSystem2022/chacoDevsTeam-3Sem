@@ -54,6 +54,8 @@ class DatabaseManager:
             manager.crear_basedatos()
         except Exception as e:
             if str(e) == 'database "gestionbiblioteca" already exists\n':
+                print('*'*50)
+                print('CONFIGURACION'.center(50))
                 print("Base de datos estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -71,7 +73,7 @@ class DatabaseManager:
         try:
             manager.crear_tabla(nombre_tabla="AUTOR",
                                 columnas="id_autor SERIAL PRIMARY KEY, nombre VARCHAR(50), apellido VARCHAR(50),"
-                                         " libros_publicados INT, libros_escritos VARCHAR(50) ")
+                                         " fecha_nacimiento INT, nacionalidad VARCHAR(50) ")
         except Exception as e:
             if str(e) == 'relation "autor" already exists\n':
                 print("Tabla autor estado: OK")
@@ -97,6 +99,8 @@ class DatabaseManager:
         except Exception as e:
             if str(e) == 'relation "solicitud_libro" already exists\n':
                 print("Tabla solicitud_libro estado: OK")
+                print('*' * 50)
+                print('\n')
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
 
