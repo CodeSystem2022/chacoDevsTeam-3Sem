@@ -46,13 +46,22 @@ class ABMLibro:
         try:
             with conexion:
                 with conexion.cursor() as cursor:
-                    sentencia = f'SELECT id_libro, titulo, genero, autor.nombre, anio_publicacion, isbn, cantidad, editorial FROM {cls.TABLA}' \
-                                f' JOIN autor ON libro.autor_id = autor.id_autor'
+                    sentencia = f'SELECT id_libro, titulo, genero, autor.nombre, autor.apellido, anio_publicacion, isbn, cantidad, editorial FROM {cls.TABLA}' \
+                                f' JOIN autor ON libro.autor_id = autor.id_autor ORDER BY id_libro ASC'
                     cursor.execute(sentencia)
                     registros = cursor.fetchall()
                     if len(registros) > 0:
                         for registro in registros:
-                            print(registro)
+                            id_libro, titulo, genero, autor_nombre, autor_apellido, anio_publicacion, isbn, cantidad, editorial = registro
+                            print(f'ID: {id_libro}')
+                            print(f'Título: {titulo}')
+                            print(f'Autor: {autor_nombre}, {autor_apellido}')
+                            print(f'Género: {genero}')
+                            print(f'Año de publicación: {anio_publicacion}')
+                            print(f'ISBN: {isbn}')
+                            print(f'Cantidad: {cantidad}')
+                            print(f'Editorial: {editorial}')
+                            print('*' * 50)
                     else:
                         print(f'No existen registros cargados')
         except Exception as e:

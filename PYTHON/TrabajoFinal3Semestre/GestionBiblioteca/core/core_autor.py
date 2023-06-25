@@ -11,9 +11,9 @@ class ABMAutor:
         conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
-                sentencia = f'INSERT INTO {cls.TABLA} (nombre, apellido, fecha_nacimiento, nacionalidad) ' \
+                sentencia = f'INSERT INTO {cls.TABLA} (nombre, apellido, anio_nacimiento, nacionalidad) ' \
                             f'VALUES (%s, %s, %s, %s)'
-                valores = (autor.nombre, autor.apellido, autor.fecha_nacimiento, autor.nacionalidad)
+                valores = (autor.nombre, autor.apellido, autor.anio_nacimiento, autor.nacionalidad)
                 cursor.execute(sentencia, valores)
                 registros_insertados = cursor.rowcount
                 print(f'Los registros insertados son: {registros_insertados}')
@@ -104,9 +104,9 @@ class ABMAutor:
         conexion = db.DatabaseManager.obtener_conexion()
         try:
             with conexion.cursor() as cursor:
-                sentencia = f'UPDATE {cls.TABLA} SET nombre= %s, apellido=%s, fecha_nacimiento=%s, nacionalidad=%s WHERE id_autor=%s'
+                sentencia = f'UPDATE {cls.TABLA} SET nombre= %s, apellido=%s, anio_nacimiento=%s, nacionalidad=%s WHERE id_autor=%s'
                 valores = (
-                    autor.nombre, autor.apellido, autor.fecha_nacimientos, autor.libros_escritos, id_autor)
+                    autor.nombre, autor.apellido, autor.anio_nacimiento, autor.nacionalidad, id_autor)
                 cursor.execute(sentencia, valores)
                 registros_actualizados = cursor.rowcount
                 print(f'Los registros actualizados son: {registros_actualizados}')
