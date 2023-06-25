@@ -4,7 +4,7 @@
 
 # **Proyecto Integrador Gestion Biblioteca**
 
-Se acordo con el equipo a desarrollar otro tipo de aplicación por la cual se decidio a por un sistema de gestion de Biblioteca.
+Se acordo con el equipo a desarrollar otro tipo de aplicación  por la cual se opto  por un sistema de gestion de Biblioteca, en el cual podriamos explayar los conocimientos adquiridos en el transcurso del semestre.
 
 # Estructura:
 
@@ -42,7 +42,7 @@ email: Propiedad que permite acceder al email de la persona. Se puede obtener su
 
 Estos métodos y propiedades permiten acceder y modificar los atributos de la instancia de Persona de manera controlada.
 
-### Clse Socio:
+### Socio:
 
 #### Atributos:
 
@@ -76,4 +76,98 @@ fecha_alta: Propiedad que permite acceder a la fecha de alta del socio. Se puede
 libros_prestados: Propiedad que permite acceder a la cantidad de libros prestados por el socio. Se puede obtener su valor con socio.libros_prestados y modificar con socio.libros_prestados = nueva_cantidad.
 
 La clase Socio hereda de la clase Persona y agrega atributos y métodos específicos para representar a un socio en el contexto de una biblioteca.
+
+### Autor:
+
+#### Atributos:
+
+_anio_nacimiento: Año de nacimiento del autor.
+_nacionalidad: Nacionalidad del autor.
+
+#### Constructor
+__init__(self, nombre=None, apellido=None, dni=0, celular=0, domicilio=None, email=None, anio_nacimiento=None, nacionalidad=None): Constructor de la clase Autor que recibe los siguientes parámetros:
+
+nombre: Nombre del autor.
+apellido: Apellido del autor.
+dni: DNI del autor.
+celular: Número de celular del autor.
+domicilio: Domicilio del autor.
+email: Dirección de correo electrónico del autor.
+anio_nacimiento: Año de nacimiento del autor.
+nacionalidad: Nacionalidad del autor.
+
+#### Métodos:
+
+__str__(self): Devuelve una representación en forma de cadena del objeto Autor. La cadena contiene los datos personales del autor heredados de la clase Persona, el año de nacimiento y la nacionalidad.
+
+#### Propiedades y setters:
+
+anio_nacimiento: Propiedad que permite acceder al año de nacimiento del autor. Se puede obtener su valor con autor.anio_nacimiento y modificar con autor.anio_nacimiento = nuevo_anio.
+nacionalidad: Propiedad que permite acceder a la nacionalidad del autor. Se puede obtener su valor con autor.nacionalidad y modificar con autor.nacionalidad = nueva_nacionalidad.
+La clase Autor hereda de la clase Persona y agrega atributos y métodos específicos para representar a un autor en el contexto de una biblioteca.
+
+### Libro:
+
+#### Atributos:
+
+_titulo: Título del libro.
+_genero: Género del libro.
+_anio_publicacion: Año de publicación del libro.
+_isbn: ISBN del libro.
+_autor_id: ID del autor del libro.
+_cantidad: Cantidad de ejemplares disponibles del libro.
+_editorial: Editorial del libro.
+
+### Constructor 
+
+__init__(self, titulo, genero, anio_publicacion, isbn, autor_id, cantidad, editorial): Constructor de la clase Libro que recibe los siguientes parámetros:
+
+titulo: Título del libro.
+genero: Género del libro.
+anio_publicacion: Año de publicación del libro.
+isbn: ISBN del libro.
+autor_id: ID del autor del libro.
+cantidad: Cantidad de ejemplares disponibles del libro.
+editorial: Editorial del libro.
+
+#### Métodos:
+
+__str__(self): Devuelve una representación en forma de cadena del objeto Libro. La cadena contiene el título, autor, género, año de publicación, cantidad de ejemplares, ISBN y editorial del libro.
+
+#### Propiedades y setters:
+
+editorial: Propiedad que permite acceder a la editorial del libro. Se puede obtener su valor con libro.editorial y modificar con libro.editorial = nueva_editorial.
+titulo: Propiedad que permite acceder al título del libro. Se puede obtener su valor con libro.titulo y modificar con libro.titulo = nuevo_titulo.
+genero: Propiedad que permite acceder al género del libro. Se puede obtener su valor con libro.genero y modificar con libro.genero = nuevo_genero.
+autor_id: Propiedad que permite acceder al ID del autor del libro. Se puede obtener su valor con libro.autor_id y modificar con libro.autor_id = nuevo_id.
+anio_publicacion: Propiedad que permite acceder al año de publicación del libro. Se puede obtener su valor con libro.anio_publicacion y modificar con libro.anio_publicacion = nuevo_anio.
+isbn: Propiedad que permite acceder al ISBN del libro. Se puede obtener su valor con libro.isbn y modificar con libro.isbn = nuevo_isbn.
+cantidad: Propiedad que permite acceder a la cantidad de ejemplares disponibles del libro. Se puede obtener su valor con libro.cantidad y modificar con libro.cantidad = nueva_cantidad.
+La clase Libro representa un libro en el contexto de una biblioteca y proporciona métodos y propiedades para acceder y modificar sus atributos.
+
+### Solicitud:
+
+#### Atributos:
+
+_libro_id: ID del libro asociado a la solicitud.
+_socio_id: ID del socio asociado a la solicitud.
+_fecha_solicitud: Fecha de la solicitud.
+_estado: Estado de la solicitud.
+
+#### Constructor 
+__init__(self, libro_id, socio_id, fecha_solicitud, estado): Constructor de la clase Solicitud que recibe los siguientes parámetros:
+
+libro_id: ID del libro asociado a la solicitud.
+socio_id: ID del socio asociado a la solicitud.
+fecha_solicitud: Fecha de la solicitud.
+estado: Estado de la solicitud.
+
+#### Propiedades y setters:
+
+libro_id: Propiedad que permite acceder al ID del libro asociado a la solicitud. Se puede obtener su valor con solicitud.libro_id y modificar con solicitud.libro_id = nuevo_id.
+socio_id: Propiedad que permite acceder al ID del socio asociado a la solicitud. Se puede obtener su valor con solicitud.socio_id y modificar con solicitud.socio_id = nuevo_id.
+fecha_solicitud: Propiedad que permite acceder a la fecha de la solicitud. Se puede obtener su valor con solicitud.fecha_solicitud y modificar con solicitud.fecha_solicitud = nueva_fecha.
+estado: Propiedad que permite acceder al estado de la solicitud. Se puede obtener su valor con solicitud.estado y modificar con solicitud.estado = nuevo_estado.
+La clase Solicitud representa una solicitud realizada por un socio para el préstamo de un libro. Permite acceder y modificar los atributos asociados a la solicitud.
+
 
