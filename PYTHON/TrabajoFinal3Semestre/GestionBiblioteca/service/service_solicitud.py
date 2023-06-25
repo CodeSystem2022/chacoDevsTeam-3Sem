@@ -123,7 +123,7 @@ class SolicitudService:
                         print("*" * 50)
                         core_solicitud.ABMSolicitud.listar_devolucion()
                         print("*" * 50)
-                     elif int(opcion) > 3 or int(opcion) < 1:
+                    elif int(opcion) > 3 or int(opcion) < 1:
                          print("Opción inválida. Por favor, elige una opción válida.");
                 else:
                     print(f'Volviendo...')
