@@ -30,6 +30,7 @@ def service_socio():
                 core_socio.ABMSocio.nuevo_socio(socio1)
                 print(socio1)
                 print("*" * 50)
+                print("\n")
             elif opcion == 2:
                 print("*" * 50)
                 print('LISTADO DE SOCIOS:'.center(50))

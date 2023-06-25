@@ -73,7 +73,7 @@ class DatabaseManager:
         try:
             manager.crear_tabla(nombre_tabla="AUTOR",
                                 columnas="id_autor SERIAL PRIMARY KEY, nombre VARCHAR(50), apellido VARCHAR(50),"
-                                         " fecha_nacimiento INT, nacionalidad VARCHAR(50) ")
+                                         " anio_nacimiento INT, nacionalidad VARCHAR(50) ")
         except Exception as e:
             if str(e) == 'relation "autor" already exists\n':
                 print("Tabla autor estado: OK")
