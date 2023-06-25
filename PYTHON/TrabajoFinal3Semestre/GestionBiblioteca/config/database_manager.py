@@ -99,7 +99,6 @@ class DatabaseManager:
         except Exception as e:
             if str(e) == 'relation "solicitud_libro" already exists\n':
                 print("Tabla solicitud_libro estado: OK")
-                print('*' * 50)
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
         print('*' * 50)
