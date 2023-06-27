@@ -120,7 +120,7 @@
   
  ### Java - 
  
- ### JavaScript - 
+ ### JavaScript - No hubo desarrollo.
  
  ### Python - Pool de conexiones con Python y Postgresql -> Parte 2
  
