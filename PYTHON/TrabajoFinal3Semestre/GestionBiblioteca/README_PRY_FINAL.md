@@ -170,4 +170,189 @@ fecha_solicitud: Propiedad que permite acceder a la fecha de la solicitud. Se pu
 estado: Propiedad que permite acceder al estado de la solicitud. Se puede obtener su valor con solicitud.estado y modificar con solicitud.estado = nuevo_estado.
 La clase Solicitud representa una solicitud realizada por un socio para el préstamo de un libro. Permite acceder y modificar los atributos asociados a la solicitud.
 
+## Clases de core:
+
+### core_autor.py
+
+Metodos:
+
+nuevo_autor(cls, autor): Este método estático permite insertar un nuevo autor en la base de datos. Toma un objeto Autor como argumento, que contiene los datos del autor a insertar. Realiza la conexión a la base de datos, ejecuta una sentencia INSERT y guarda el número de registros insertados. También registra un mensaje en el archivo de log en caso de éxito o error.
+
+buscar_autor(cls, id_autor): Este método estático busca un autor en la base de datos por su ID. Toma el ID del autor como argumento y devuelve el registro del autor encontrado. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene el primer registro coincidente. Si ocurre un error, registra un mensaje en el archivo de log.
+
+buscar_autor_por_nombre(cls, autor): Este método estático busca un autor en la base de datos por su nombre. Toma el nombre del autor como argumento y devuelve el ID del autor encontrado. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT con una cláusula LIKE y obtiene el primer registro coincidente. Si ocurre un error, registra un mensaje en el archivo de log.
+
+buscar_autor_por_apellido(cls, autor): Este método estático busca un autor en la base de datos por su apellido. Toma el apellido del autor como argumento y devuelve el ID del autor encontrado. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT con una cláusula LIKE y obtiene el primer registro coincidente. Si ocurre un error, registra un mensaje en el archivo de log.
+
+listar_autor(cls): Este método estático lista todos los autores en la base de datos. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene todos los registros. Si hay registros, los muestra en la consola. Si no hay registros, muestra un mensaje indicando que no existen registros cargados. Si ocurre un error, registra un mensaje en el archivo de log.
+
+borrar_autor(cls, id_autor): Este método estático borra un autor de la base de datos por su ID. Toma el ID del autor como argumento, realiza la conexión a la base de datos, ejecuta una sentencia DELETE y guarda el número de registros eliminados. También registra un mensaje en el archivo de log en caso de éxito o error.
+
+modificar_autor(cls, autor, id_autor): Este método estático modifica los datos de un autor en la base de datos. Toma un objeto Autor con los nuevos datos del autor y el ID del autor a modificar. Realiza la conexión a la base de datos, ejecuta una sentencia UPDATE y guarda el número de registros actualizados. También registra un mensaje en el archivo de log en caso de éxito o error.
+
+### core_libro.py
+
+Métodos:
+
+nuevo_libro(cls, libro): Este método estático permite insertar un nuevo libro en la base de datos. Toma un objeto libro como argumento, que contiene los datos del libro a insertar. Realiza la conexión a la base de datos, ejecuta una sentencia INSERT y guarda el número de registros insertados. También muestra por consola los registros insertados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+buscar_libro(cls, id_libro): Este método estático busca un libro en la base de datos por su ID. Toma el ID del libro como argumento y muestra por consola los registros encontrados. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene el primer registro coincidente. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+listar_libros(cls): Este método estático lista todos los libros en la base de datos. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene todos los registros. Si hay registros, muestra por consola los detalles de cada libro. Si no hay registros, muestra un mensaje indicando que no existen registros cargados. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+borrar_libro(cls, id_libro): Este método estático elimina un libro de la base de datos por su ID. Toma el ID del libro como argumento, realiza la conexión a la base de datos, ejecuta una sentencia DELETE y guarda el número de registros eliminados. También muestra por consola los registros eliminados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+modificar_libro(cls, libro, id_libro): Este método estático modifica los datos de un libro en la base de datos. Toma un objeto libro con los nuevos datos del libro y el ID del libro a modificar. Realiza la conexión a la base de datos, ejecuta una sentencia UPDATE y guarda el número de registros actualizados. También muestra por consola los registros actualizados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+agregar_libro_existente(cls, cantidad, id_libro): Este método estático permite agregar más ejemplares a un libro existente en la base de datos. Toma la cantidad a agregar y el ID del libro como argumentos. Realiza la conexión a la base de datos, ejecuta una sentencia UPDATE y guarda el número de registros actualizados. También muestra por consola los registros actualizados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+buscar_libro_por_titulo(cls, titulo): Este método estático busca un libro en la base de datos por su título. Toma el título del libro como argumento y ejecuta una sentencia SELECT con una cláusula LIKE. Devuelve el ID del libro encontrado o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_id_libro_por_id(cls, titulo): Este método estático busca un libro en la base de datos por su ID. Toma el ID del libro como argumento y ejecuta una sentencia SELECT. Devuelve el ID del libro encontrado o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_libro_por_isbn(cls, isbn): Este método estático busca un libro en la base de datos por su ISBN. Toma el ISBN del libro como argumento y ejecuta una sentencia SELECT con una cláusula LIKE. Devuelve el ID del libro encontrado o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_cantidad_libro_por_isbn(cls, isbn): Este método estático busca la cantidad de ejemplares de un libro en la base de datos por su ISBN. Toma el ISBN del libro como argumento y ejecuta una sentencia SELECT. Devuelve la cantidad de ejemplares encontrados o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_cantidad_libro_por_id(cls, id_libro): Este método estático busca la cantidad de ejemplares de un libro en la base de datos por su ID. Toma el ID del libro como argumento y ejecuta una sentencia SELECT. Devuelve la cantidad de ejemplares encontrados o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+### core_socio:
+
+Métodos:
+
+nuevo_socio(cls, socio): Este método estático permite insertar un nuevo socio en la base de datos. Toma un objeto socio como argumento, que contiene los datos del socio a insertar. Realiza la conexión a la base de datos, ejecuta una sentencia INSERT y guarda el número de registros insertados. También muestra por consola los registros insertados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+buscar_socio(cls, id_socio): Este método estático busca un socio en la base de datos por su ID. Toma el ID del socio como argumento y muestra por consola los registros encontrados. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene el primer registro coincidente. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_socio_por_nombre(cls, socio): Este método estático busca un socio en la base de datos por su nombre. Toma el nombre del socio como argumento y ejecuta una sentencia SELECT con una cláusula LIKE. Devuelve el ID del socio encontrado o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_socio_por_apellido(cls, socio): Este método estático busca un socio en la base de datos por su apellido. Toma el apellido del socio como argumento y ejecuta una sentencia SELECT con una cláusula LIKE. Devuelve el ID del socio encontrado o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+buscar_socio_por_id(cls, socio): Este método estático busca un socio en la base de datos por su ID. Toma el ID del socio como argumento y ejecuta una sentencia SELECT. Devuelve el ID del socio encontrado o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+listar_socios(cls): Este método estático lista todos los socios en la base de datos. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene todos los registros. Si hay registros, muestra por consola los detalles de cada socio. Si no hay registros, muestra un mensaje indicando que no existen registros cargados. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+borrar_socio(cls, id_socio): Este método estático elimina un socio de la base de datos por su ID. Toma el ID del socio como argumento, realiza la conexión a la base de datos, ejecuta una sentencia DELETE y guarda el número de registros eliminados. También muestra por consola los registros eliminados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+modificar_socio(cls, socio, id_socio): Este método estático modifica los datos de un socio en la base de datos por su ID. Toma un objeto socio con los nuevos datos y el ID del socio a modificar. Realiza la conexión a la base de datos, ejecuta una sentencia UPDATE y guarda el número de registros actualizados. También muestra por consola los registros actualizados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+### core_solicitud:
+
+Métodos:
+
+nueva_solicitud(cls, solicitud): Este método estático permite insertar una nueva solicitud de libro en la base de datos. Toma un objeto solicitud como argumento, que contiene los datos de la solicitud a insertar. Realiza la conexión a la base de datos, ejecuta una sentencia INSERT y guarda el número de registros insertados. También muestra por consola los registros insertados y registra un mensaje en el archivo de log en caso de éxito o error.
+
+listar_solicitudes(cls): Este método estático lista todas las solicitudes de libros en la base de datos que no han sido devueltas. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene los registros correspondientes. Si hay registros, muestra por consola los detalles de cada solicitud. Si no hay registros, muestra un mensaje indicando que no existen registros cargados. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+listar_solicitudes_por_id(cls, id_socio, id_libro): Este método estático lista las solicitudes de libros en la base de datos de un socio específico y un libro específico que no ha sido devuelto. Toma el ID del socio y el ID del libro como argumentos y ejecuta una sentencia SELECT con una cláusula WHERE. Devuelve el ID de la solicitud encontrada o None si no se encontró ningún registro. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+listar_devolucion(cls): Este método estático lista todas las solicitudes de libros en la base de datos que han sido devueltas. Realiza la conexión a la base de datos, ejecuta una sentencia SELECT y obtiene los registros correspondientes. Si hay registros, muestra por consola los detalles de cada solicitud. Si no hay registros, muestra un mensaje indicando que no existen registros cargados. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+listar_devolucion_socio(cls, socio_id): Este método estático lista las solicitudes de libros en la base de datos que han sido devueltas por un socio específico. Toma el ID del socio como argumento y ejecuta una sentencia SELECT con una cláusula WHERE. Muestra por consola los detalles de cada solicitud devuelta por el socio. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+listar_solicitud_socio(cls, socio_id): Este método estático lista las solicitudes de libros en la base de datos que aún no han sido devueltas por un socio específico. Toma el ID del socio como argumento y ejecuta una sentencia SELECT con una cláusula WHERE. Si hay registros, muestra por consola los detalles de cada solicitud. Si no hay registros, muestra un mensaje indicando que no existen registros cargados. Si ocurre un error, muestra un mensaje por consola y registra un mensaje en el archivo de log.
+
+## Clases de service:
+
+### service_autor:
+
+La clase service_autor proporciona un servicio para interactuar con la entidad "Autor" a través de un menú de opciones. Importa los módulos necesarios y utiliza la funcionalidad proporcionada por el módulo core_autor para realizar operaciones en la base de datos.
+
+Métodos:
+
+service_autor(): Este método es el punto de entrada del servicio. Muestra un menú de opciones y permite al usuario seleccionar una opción. El ciclo se repite hasta que el usuario seleccione la opción de salida (opción 5). Dentro del ciclo, se captura la opción del usuario y se ejecuta el código correspondiente a cada opción.
+
+Opción 1: NUEVO AUTOR: Permite al usuario ingresar los datos de un nuevo autor y crea un objeto Autor con esos datos. Luego, llama al método core_autor.ABMAutor.nuevo_autor() para insertar el autor en la base de datos. Muestra por consola el autor creado.
+
+Opción 2: LISTADO DE AUTORES: Muestra por consola el listado de todos los autores en la base de datos utilizando el método core_autor.ABMAutor.listar_autor().
+
+Opción 3: BAJA AUTOR: Permite al usuario ingresar el ID de un autor y llama al método core_autor.ABMAutor.borrar_autor() para eliminar ese autor de la base de datos.
+
+Opción 4: MODIFICAR DATOS DE AUTOR: Permite al usuario ingresar el ID de un autor y muestra los datos actuales del autor. Luego, permite al usuario ingresar los nuevos datos del autor y crea un objeto Autor con esos datos. Llama al método core_autor.ABMAutor.modificar_autor() para actualizar los datos del autor en la base de datos.
+
+Opción inválida: Si el usuario ingresa una opción inválida, muestra un mensaje de error.
+
+Si ocurre una excepción durante la ejecución del código, se captura la excepción, se muestra un mensaje de error y se registra un mensaje en el archivo de log utilizando logger_base.log.error().
+
+El servicio continúa ejecutándose hasta que el usuario selecciona la opción de salida (opción 5), momento en el cual se muestra un mensaje indicando que se está volviendo al menú principal.
+
+### service_libro:
+
+Crear un nuevo libro: Esta opción permite al usuario ingresar los datos de un nuevo libro, como ISBN, título, género, año de publicación, cantidad de copias y editorial. Además, se solicita al usuario que ingrese información sobre el autor del libro, ya sea por nombre, apellido o ID. Si el libro ya existe en la base de datos (se verifica mediante el ISBN), se muestra un mensaje de error.
+
+Listar libros existentes: Esta opción muestra una lista de todos los libros existentes en la base de datos.
+
+Eliminar un libro: El usuario puede seleccionar esta opción e ingresar el ID del libro que desea eliminar. El libro correspondiente se elimina de la base de datos.
+
+Modificar los datos de un libro: Esta opción permite al usuario ingresar el ID del libro que desea modificar. Luego se le solicita que ingrese los nuevos datos del libro, como título, género, editorial y detalles del autor. Una vez ingresados los nuevos datos, se realiza la modificación en la base de datos.
+
+Agregar copias a un libro existente: Si el usuario selecciona esta opción, se le solicita el ISBN del libro al que desea agregar copias. Si el libro existe en la base de datos, se solicita al usuario que ingrese la cantidad de copias que desea agregar. Luego se actualiza la cantidad de copias en la base de datos.
+
+Volver al menú principal: Esta opción permite al usuario regresar al menú principal.
+
+La clase service_libro utiliza varios módulos y clases para llevar a cabo estas operaciones, como el módulo config, los módulos core_libro y core_autor, la clase Libro del módulo domain.libro, y los módulos ui.mostrar_menu_libro y ui.mostrar_menu_principal_abm1.
+
+En caso de que ocurra un error durante la ejecución de alguna operación, se captura la excepción y se muestra un mensaje de error, además de guardar el registro de error en un archivo de registro utilizando la clase logger_base del módulo config.
+
+### service_socio:
+
+Crear un nuevo socio: Esta opción permite al usuario ingresar los datos de un nuevo socio, como nombre, apellido, DNI, celular, domicilio y correo electrónico. Además, se genera la fecha actual utilizando la función obtener_fecha_hoy del módulo date_utils. Luego se crea una instancia de la clase Socio con los datos ingresados y se llama al método nuevo_socio de la clase ABMSocio del módulo core_socio para agregar al socio a la base de datos.
+
+Listar socios existentes: Esta opción muestra un listado de todos los socios existentes en la base de datos utilizando el método listar_socios de la clase ABMSocio del módulo core_socio.
+
+Eliminar un socio: El usuario puede seleccionar esta opción e ingresar el ID del socio que desea eliminar. Se llama al método borrar_socio de la clase ABMSocio del módulo core_socio para eliminar al socio correspondiente de la base de datos.
+
+Modificar los datos de un socio: Esta opción permite al usuario ingresar el ID del socio que desea modificar. Se llama al método buscar_socio de la clase ABMSocio del módulo core_socio para buscar al socio correspondiente en la base de datos. Luego se solicita al usuario que ingrese los nuevos datos del socio, como nombre, apellido, DNI, celular, domicilio y correo electrónico. Se crea una instancia de la clase Socio con los nuevos datos y se llama al método modificar_socio de la clase ABMSocio del módulo core_socio para actualizar los datos del socio en la base de datos.
+
+Volver al menú principal: Esta opción permite al usuario regresar al menú principal.
+
+La clase service_socio utiliza varios módulos y clases para llevar a cabo estas operaciones, como el módulo config, el módulo core_socio, la clase Socio del módulo domain.socio, el módulo date_utils y el módulo ui.
+
+En caso de que ocurra un error durante la ejecución de alguna operación, se captura la excepción y se muestra un mensaje de error. Además, se registra el error utilizando la clase logger_base del módulo config.
+
+### service_solicitud:
+
+El servicio se organiza en la clase SolicitudService.
+
+La clase SolicitudService contiene dos métodos principales: service_solicitud_alta y service_devolucion_alta, que se encargan de gestionar el registro de solicitudes de libros y devoluciones de libros, respectivamente.
+
+El método service_solicitud_alta permite registrar una solicitud de libro. Dentro del método, se muestra un menú con las siguientes opciones:
+
+Registrar una solicitud de un libro
+Listar Solicitudes
+Volver
+El usuario puede elegir una opción ingresando el número correspondiente. Si elige la opción 1, se realiza lo siguiente:
+
+Se solicita al usuario que busque un libro mediante la función buscar_libro.
+Si se encuentra el libro, se verifica la cantidad disponible.
+Si hay disponibilidad, se solicita al usuario que busque un socio mediante la función buscar_socio.
+Si se encuentra el socio, se crea una instancia de la clase Solicitud con los datos del libro, socio, fecha actual y estado "NO_DEVUELTO".
+Se registra la solicitud llamando al método nueva_solicitud de la clase ABMSolicitud del módulo core_solicitud.
+Se actualiza la cantidad de libros disponibles restando 1 mediante el método agregar_libro_existente de la clase ABMLibro del módulo core_libro.
+Si no hay disponibilidad del libro o se producen errores durante el proceso, se muestra un mensaje correspondiente.
+
+Si el usuario elige la opción 2 del menú, se muestra otro menú con las siguientes opciones:
+
+Listar por socio
+Listar general
+Volver
+El usuario puede elegir una opción ingresando el número correspondiente. Si elige la opción 1, se solicita al usuario que busque un socio mediante la función buscar_socio. Si se encuentra el socio, se muestra el historial de solicitudes del socio utilizando el método listar_solicitud_socio de la clase ABMSolicitud del módulo core_solicitud. Si elige la opción 2, se muestra el historial general de solicitudes utilizando el método listar_solicitudes del mismo módulo.
+
+El método service_devolucion_alta permite registrar una devolución de libro. Similar al método anterior, se muestra un menú con las siguientes opciones:
+
+Registrar una devolución de un libro
+Listar devoluciones
+Volver
+Si el usuario elige la opción 1, se realiza lo siguiente:
+
+Se solicita al usuario que busque un socio mediante la función buscar_socio.
+Se solicita al usuario que busque un libro mediante la función buscar_libro.
+Se muestra el historial de solicitudes de ese libro y socio utilizando el método listar_solicitudes_por_id de la clase ABMSolicitud del módulo core_solicitud.
+Si se encuentra el libro y el socio, se crea una instancia de la clase Solicitud con los datos del libro, socio, fecha actual y estado "DEVUELTO".
+Se registra la devolución llamando al método nueva_solicitud de la clase ABMSolicitud del módulo core_solicitud.
+Se actualiza la cantidad de libros disponibles sumando 1 mediante el método agregar_libro_existente de la clase ABMLibro del módulo core_libro.
+Al igual que antes, se manejan las situaciones en las que no se encuentre el libro, el socio o se produzcan errores.
+
+
+
 
