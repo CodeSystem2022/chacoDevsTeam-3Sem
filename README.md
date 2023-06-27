@@ -112,9 +112,17 @@
   
  ### Java - Proyecto estudiantes
  
+ ### JavaScript - No hubo desarrollo
+ 
+ ### Python - No hubo desarrollo
+
+  ## Décimo tercera Semana (Scrum master- Balbuena Nicolas Fernando)
+  
+ ### Java - 
+ 
  ### JavaScript - 
  
- ### Python -
+ ### Python - Pool de conexiones con Python y Postgresql -> Parte 2
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
