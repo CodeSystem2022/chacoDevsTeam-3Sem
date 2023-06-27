@@ -353,6 +353,61 @@ Se registra la devolución llamando al método nueva_solicitud de la clase ABMSo
 Se actualiza la cantidad de libros disponibles sumando 1 mediante el método agregar_libro_existente de la clase ABMLibro del módulo core_libro.
 Al igual que antes, se manejan las situaciones en las que no se encuentre el libro, el socio o se produzcan errores.
 
+## Clases de config
+
+### database_manager:
+
+Atributos de clase:
+
+_DATABASE, _USERNAME, _PASSWORD, _DB_PORT, _HOST: Estos atributos almacenan los valores necesarios para establecer la conexión con la base de datos PostgreSQL.
+_CONEXION, _CURSOR: Estos atributos son utilizados para almacenar la conexión y el cursor a la base de datos, respectivamente.
+Método de clase crear_basedatos():
+
+Este método se encarga de crear la base de datos especificada por el atributo _DATABASE.
+Establece una conexión sin especificar la base de datos utilizando los valores de atributos correspondientes.
+Luego, ejecuta una consulta SQL para crear la base de datos.
+Finalmente, muestra un mensaje indicando que la base de datos ha sido creada y registra un log con la misma información.
+Método de clase crear_tabla(nombre_tabla, columnas):
+
+Este método se utiliza para crear una tabla en la base de datos.
+Recibe el nombre de la tabla y una cadena de texto que representa las columnas de la tabla.
+Utiliza los métodos obtener_conexion() y obtener_cursor() para obtener una conexión y un cursor a la base de datos.
+Verifica si la tabla ya existe en la base de datos utilizando una consulta SQL.
+Si la tabla no existe, ejecuta una consulta SQL para crear la tabla.
+Muestra un mensaje indicando si la tabla fue creada o si ya existía y registra un log con la misma información.
+Método de clase inicializar():
+
+Este método se encarga de inicializar la base de datos y las tablas necesarias.
+Crea una instancia de DatabaseManager.
+Intenta crear la base de datos y las tablas de "SOCIO", "AUTOR", "LIBRO" y "SOLICITUD_LIBRO" utilizando el método crear_tabla().
+Si alguna tabla ya existe, muestra un mensaje indicando que la tabla ya existe.
+En caso de que ocurra alguna excepción, registra un log con la información del error.
+Métodos de clase obtener_conexion() y obtener_cursor():
+
+Estos métodos se utilizan para obtener la conexión y el cursor a la base de datos, respectivamente.
+Si la conexión o el cursor aún no han sido creados, establecen una nueva conexión utilizando los atributos correspondientes.
+Si la conexión o el cursor ya existen, los devuelve
+
+### logger_base:
+
+log.basicConfig(): Esta función configura el comportamiento de registro de la biblioteca logging. Recibe varios argumentos para personalizar la configuración:
+
+level: Especifica el nivel de registro mínimo que se mostrará. En este caso, se establece en log.INFO, lo que significa que solo se mostrarán los mensajes de registro con un nivel igual o superior a INFO.
+
+format: Define el formato del mensaje de registro. En este caso, se utiliza el siguiente formato: '%(asctime)s:%(levelname)s [%(filename)s:%(lineno)s] %(message)s'. Este formato incluye la fecha y hora del registro, el nivel del registro, el nombre del archivo y el 
+
+número de línea donde se realiza el registro, y el mensaje en sí.
+
+datefmt: Especifica el formato de fecha y hora que se utilizará en el registro. En este caso, se establece en '%I:%M:%S %p', lo que indica que se utilizará un formato de 12 horas.
+
+handlers: Define los controladores de registro que se utilizarán. En este caso, se proporcionan dos controladores:
+
+log.FileHandler('capa_datos.log'): Este controlador guarda los registros en un archivo llamado capa_datos.log. Los registros se agregarán al final del archivo cada vez que se realice un registro.
+
+log.StreamHandler(): Este controlador envía los registros a la corriente de salida estándar, lo que significa que se mostrarán en la consola.
+
+En resumen, las instrucciones configuran la biblioteca de registro logging en Python para que los mensajes de registro con un nivel igual o superior a INFO se muestren en la consola y se guarden en un archivo llamado capa_datos.log. El formato del mensaje de registro incluye la fecha y hora, el nivel del registro, el nombre del archivo y el número de línea, y el mensaje en sí. El formato de fecha y hora utiliza un formato de 12 horas.
+
 
 
 
