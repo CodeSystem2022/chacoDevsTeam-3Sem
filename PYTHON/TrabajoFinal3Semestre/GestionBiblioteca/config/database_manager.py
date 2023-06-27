@@ -3,6 +3,11 @@ import config.logger_base as logger_base
 import sys
 
 
+import psycopg2 as bd
+import config.logger_base as logger_base
+import sys
+
+
 class DatabaseManager:
     _DATABASE = 'gestionbiblioteca'
     _USERNAME = 'postgres'
@@ -55,7 +60,7 @@ class DatabaseManager:
             print('*' * 50)
             manager.crear_basedatos()
         except Exception as e:
-            if str(e) == 'database "gestionbiblioteca" already exists\n':
+            if str(e) == 'database "gestionbiblioteca" already exists\n' or 'la base de datos "gestionbiblioteca" ya existe\n':
                 print("Base de datos estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -65,7 +70,7 @@ class DatabaseManager:
                                 columnas="id_socio SERIAL PRIMARY KEY, dni INT, nombre VARCHAR(50), apellido VARCHAR(50),"
                                          " celular VARCHAR(50), domicilio VARCHAR(50), email VARCHAR(50)")
         except Exception as e:
-            if str(e) == 'relation "socio" already exists\n':
+            if str(e) == 'relation "socio" already exists\n' or 'la relación "socio" ya existe\n':
                 print("Tabla socio estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -75,7 +80,7 @@ class DatabaseManager:
                                 columnas="id_autor SERIAL PRIMARY KEY, nombre VARCHAR(50), apellido VARCHAR(50),"
                                          " anio_nacimiento INT, nacionalidad VARCHAR(50) ")
         except Exception as e:
-            if str(e) == 'relation "autor" already exists\n':
+            if str(e) == 'relation "autor" already exists\n' or 'la relación "autor" ya existe\n':
                 print("Tabla autor estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -86,7 +91,7 @@ class DatabaseManager:
                                          "editorial VARCHAR(255), autor_id INT, FOREIGN KEY (autor_id) "
                                          "REFERENCES AUTOR (id_autor)")
         except Exception as e:
-            if str(e) == 'relation "libro" already exists\n':
+            if str(e) == 'relation "libro" already exists\n' or 'la relación "libro" ya existe\n':
                 print("Tabla libro estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
@@ -97,7 +102,7 @@ class DatabaseManager:
                                          " FOREIGN KEY (socio_id) REFERENCES SOCIO (id_socio) ,fecha_solicitud DATE , "
                                          "estado VARCHAR(50)")
         except Exception as e:
-            if str(e) == 'relation "solicitud_libro" already exists\n':
+            if str(e) == 'relation "solicitud_libro" already exists\n' or 'la relación "solicitud_libro" ya existe':
                 print("Tabla solicitud_libro estado: OK")
             else:
                 logger_base.log.error(f'OCURRIO UN ERROR {e}')
