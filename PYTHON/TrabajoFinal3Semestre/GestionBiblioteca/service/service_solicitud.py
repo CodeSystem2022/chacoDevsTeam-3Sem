@@ -135,7 +135,7 @@ class SolicitudService:
     @classmethod
     def buscar_socio(cls):
         print("*" * 50)
-        print('HISTORIAL SOLICITUDES/DEVOLUCIONES SOCIO'.center(50))
+        print('SOCIO'.center(50))
         print("*" * 50)
         print("Ingrese un modo de busqueda de SOCIO\n1: Nombre: \n2: Apellido: \n3: id: ")
         print("*" * 50)
