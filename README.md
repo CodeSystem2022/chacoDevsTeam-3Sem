@@ -102,15 +102,15 @@
  
   ## Décimo primera Semana (Scrum master- Gutierrez, Agustin Rene)
   
- ### Java - Proyecto Listar Personas
+ ### Java - [Proyecto Listar Personas](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-decima-primera-semana-java)
  
- ### JavaScript - Proyecto Ventas
+ ### JavaScript - [Proyecto Ventas](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-d%C3%A9cima-primera-semana---Clases-tercera-parte)
  
- ### Python - Pool de conexiones con Python y Postgresql
+ ### Python - [Pool de conexiones con Python y Postgresql](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-decima-primera-semana-Python)
  
  ## Décimo segunda Semana (Scrum master- Gutierrez, Alejo H. )
   
- ### Java - Proyecto estudiantes
+ ### Java - [Proyecto estudiantes](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki/Ejercicios-Semana-12---Estudiantes-Parte-1)
  
  ### JavaScript - No hubo desarrollo
  
@@ -118,7 +118,7 @@
 
   ## Décimo tercera Semana (Scrum master- Balbuena Nicolas Fernando)
   
- ### Java - 
+ ### Java - Proyecto estudiantes Parte 2
  
  ### JavaScript - No hubo desarrollo.
  
