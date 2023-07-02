@@ -10,7 +10,7 @@ import UTN.dominio.Estudiante;
 
 public class EstudianteDAO {
     //Metod listar
-    public List<EstudianteDAO> listarEstudiantes(){
+    public List<Estudiante> listarEstudiantes() {
         List<Estudiante> estudiantes = new ArrayList<>();
         //Creamos algunos objetos que son necesarios para comunicarnos con la base de datos
         PreparedStatement ps; //Envia la sentencia a la base de datos
@@ -18,10 +18,10 @@ public class EstudianteDAO {
         //Creamos un objeto de tipo conexion
         Connection con = getConnection();
         String sql = "SELECT * FROM estudiantes2022 ORDER BY estudiantes2022";
-        try{
+        try {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
-            while (rs.next()){
+            while (rs.next()) {
                 var estudiante = new Estudiante();
                 estudiante.setIdEstudiante(rs.getInt("idestudiante2022"));
                 estudiante.setNombre(rs.getString("nombre"));
@@ -31,74 +31,69 @@ public class EstudianteDAO {
                 //Falta agregarlo a la lista
                 estudiantes.add(estudiante);
             }
-        } catch (Exception e){
-            System.out.println("Ocurrio un error al seleccionar datos: "+e.getMessage());
-        }
-        finally {
-            try{
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error al seleccionar datos: " + e.getMessage());
+        } finally {
+            try {
                 con.close();
-            }catch (Exception e){
-                System.out.println("Ocurrio un error al cerrar la conexion: "+e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Ocurrio un error al cerrar la conexion: " + e.getMessage());
             }
         }//Fin finally
         return estudiantes;
     } //Fin metodo listar
-}
 
-    }
-}
     //Metodo por id -> fin by id
-    public boolean buscarEstudiantePorId(Estudiante estudiante){
+    public boolean buscarEstudiantePorId(Estudiante estudiante) {
         PreparedStatement ps;
         ResultSet rs;
         Connection con = getConnection();
         String sql = "SELECT * FROM estudiante2022 WHERE idestudiantes22=?";
-        try{
+        try {
             ps = con.prepareStatement(sql);
-            ps.setInt(1, estudiante.getEstudiante());
+            ps.setInt(1, estudiante.getIdEstudiante());
             rs = ps.executeQuery();
-            if(rs.next()){
-                estudiante.SetNombre(rs.getString("nombre"));
-                estudiante.SetApellido(rs.getString("apellido"));
-                estudiante.SetTelefono(rs.getString("telefono"));
-                estudiante.SetEmail(rs.getString("email"));
+            if (rs.next()) {
+                estudiante.setNombre(rs.getString("nombre"));
+                estudiante.setApellido(rs.getString("apellido"));
+                estudiante.setTelefono(rs.getString("telefono"));
+                estudiante.setEmail(rs.getString("email"));
                 return true; //Se encontro un registro
             }//Fin if
-        }catch (Exception e){
-            System.out.println("Ocurrio un error al buscar estudiante: "+e.getMessage());
-        }
-        finally {
+        } catch (Exception e) {
+            System.out.println("Ocurrio un error al buscar estudiante: " + e.getMessage());
+        } finally {
             try {
                 con.close();
-            }catch (Exception e){
-                System.out.println("Ocurrio un error al cerrar la conexión: "+e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Ocurrio un error al cerrar la conexión: " + e.getMessage());
             }//fin catch
         }//fin finally
         return false;
     }
 
     //Metodo agregar un nuevo estudiante
-    public boolean agregarEstudiante(Estudiante estudiante){
-    PreparedStatement ps;
-    Connection con = getConnection();
-    String sql = 'INSERT INTO estudiantes2022(nombre, apellido, telefono, email) VALUES (?,?,?,?)';
-    TRY{
-        ps = con.prepareStatement(sql);
-        ps.setString(1, estudiante.getNombre());
-        ps.setString(2, estudiante.getApellido());
-        ps.setString(3, estudiante.getTelefono());
-        ps.setString(4, estudiante.getEmail());
-        ps.execute();
-        return true;
+    public boolean agregarEstudiante(Estudiante estudiante) {
+        PreparedStatement ps;
+        Connection con = getConnection();
+        String sql = "INSERT INTO estudiantes2022(nombre, apellido, telefono, email) VALUES (?,?,?,?)";
+        try {
+            ps = con.prepareStatement(sql);
+            ps.setString(1, estudiante.getNombre());
+            ps.setString(2, estudiante.getApellido());
+            ps.setString(3, estudiante.getTelefono());
+            ps.setString(4, estudiante.getEmail());
+            ps.execute();
+            return true;
         }catch(Exception e){
-            System.out.println("Ocurrio un Error al agregar estudiante"+e.getMessage());
+            System.out.println("Ocurrio un Error al agregar estudiante" + e.getMessage());
         }//Fin catch
         finally{
-        try{
-            con.close();
-        }catch (Exception e){
-            System.out.println("Error al cerrar la conexion: "+e.getMessage());
-        }//fin catch
+            try {
+                con.close();
+            } catch (Exception e) {
+                System.out.println("Error al cerrar la conexion: " + e.getMessage());
+            }//fin catch
         }//fin finally
         return false;
     }//Fin metodo agregarEstudiante
@@ -107,6 +102,8 @@ public class EstudianteDAO {
         //Listar los estudiantes
         var estudianteDao = new EstudianteDAO();
         System.out.println("Listado de estudiantes: ");
-        List<Estudiante> estudiantes = estudianteDao.listarestudiantes();
+        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
         estudiantes.forEach(System.out::println); // Funcion lamda para imporimir
     }
+
+}
