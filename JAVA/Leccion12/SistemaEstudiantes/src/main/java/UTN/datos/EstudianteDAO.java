@@ -17,6 +17,30 @@ public class EstudianteDAO {
         ResultSet rs; //Obtenemos el resultado de la base de datos
         //Creamos un objeto de tipo conexion
         Connection con = getConnection();
-        String sql = "SELECT * FROM"
-    }
+        String sql = "SELECT * FROM estudiantes2022 ORDER BY estudiantes2022";
+        try{
+            ps = con.prepareStatement(sql);
+            rs = ps.executerQuery();
+            while (rs.next()){
+                var estudiante = new Estudiante();
+                estudiante.setIdEstudiante(rs.getInt("idestudiante2022"));
+                estudiante.setNombre(rs.getString("nombre"));
+                estudiante.setApellido(rs.getString("apellido"));
+                estudiante.setTelefono(rs.getString("telefono"));
+                estudiante.setEmail(rs.getString("email"));
+                //Falta agregarlo a la lista
+                estudiantes.add(estudiante);
+            }
+        } catch (Exception e){
+            System.out.println("Ocurrio un error al seleccionar datos: "+e.getMessager());
+        }
+        finally {
+            try{
+                con.close();
+            }catch (Exception e){
+                System.out.println("Ocurrio un error al cerrar la conexion: "+e.getMessage());
+            }
+        }//Fin finally
+        return estudiantes;
+    } //Fin metodo listar
 }
