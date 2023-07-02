@@ -17,13 +17,13 @@ public class EstudianteDAO {
         ResultSet rs; //Obtenemos el resultado de la base de datos
         //Creamos un objeto de tipo conexion
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiantes2022 ORDER BY estudiantes2022";
+        String sql = "SELECT * FROM estudiantes2022 ORDER BY idestudiantes2022";
         try {
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
                 var estudiante = new Estudiante();
-                estudiante.setIdEstudiante(rs.getInt("idestudiante2022"));
+                estudiante.setIdEstudiante(rs.getInt("idestudiantes2022"));//EN EL VIDEO NO ESTA LA S
                 estudiante.setNombre(rs.getString("nombre"));
                 estudiante.setApellido(rs.getString("apellido"));
                 estudiante.setTelefono(rs.getString("telefono"));
@@ -48,7 +48,7 @@ public class EstudianteDAO {
         PreparedStatement ps;
         ResultSet rs;
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiante2022 WHERE idestudiantes22=?";
+        String sql = "SELECT * FROM estudiante2022 WHERE idestudiantes2022=?";
         try {
             ps = con.prepareStatement(sql);
             ps.setInt(1, estudiante.getIdEstudiante());
@@ -104,6 +104,14 @@ public class EstudianteDAO {
         System.out.println("Listado de estudiantes: ");
         List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
         estudiantes.forEach(System.out::println); // Funcion lamda para imporimir
+        
+        //Agregar estudiante
+        var nuevoEstudiante = new Estudiante("Carlos", "Lara", "5499544223", "carlos@gmail.com");
+        var agregado = estudianteDao.agregarEstudiante(nuevoEstudiante);
+        if(agregado)
+            System.out.println("Estudiante agregado: "+nuevoEstudiante);
+        else
+            System.out.println("No se ha agregado estudiante: "+nuevoEstudiante);
     }
 
 }
