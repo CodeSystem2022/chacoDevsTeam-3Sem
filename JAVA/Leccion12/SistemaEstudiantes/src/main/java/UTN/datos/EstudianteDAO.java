@@ -10,7 +10,7 @@ import UTN.dominio.Estudiante;
 
 public class EstudianteDAO {
     //Metod listar
-    public List<EstudianteDAO> listar(){
+    public List<EstudianteDAO> listarEstudiantes(){
         List<Estudiante> estudiantes = new ArrayList<>();
         //Creamos algunos objetos que son necesarios para comunicarnos con la base de datos
         PreparedStatement ps; //Envia la sentencia a la base de datos
@@ -20,3 +20,40 @@ public class EstudianteDAO {
         String sql = "SELECT * FROM"
     }
 }
+    //Metodo por id -> fin by id
+    public boolean buscarEstudiantePorId(Estudiante estudiante){
+        PreparedStatement ps;
+        ResultSet rs;
+        Connection con = getConnection();
+        String sql = "SELECT * FROM estudiante2022 WHERE idestudiantes22=?";
+        try{
+            ps = con.prepareStatement(sql);
+            ps.setInt(1, estudiante.getEstudiante());
+            rs = ps.executeQuery();
+            if(rs.next()){
+                estudiante.SetNombre(rs.getString("nombre"));
+                estudiante.SetApellido(rs.getString("apellido"));
+                estudiante.SetTelefono(rs.getString("telefono"));
+                estudiante.SetEmail(rs.getString("email"));
+                return true; //Se encontro un registro
+            }//Fin if
+        }catch (Exception e){
+            System.out.println("Ocurrio un error al buscar estudiante: "+e.getMessage());
+        }
+        finally {
+            try {
+                con.close();
+            }catch (Exception e){
+                System.out.println("Ocurrio un error al cerrar la conexión: "+e.getMessage());
+            }//fin catch
+        }//fin finally
+        return false;
+    }
+
+    public static void main(String[] args) {
+        //Listar los estudiantes
+        var estudianteDao = new EstudianteDAO();
+        System.out.println("Listado de estudiantes: ");
+        List<Estudiante> estudiantes = estudianteDao.listarestudiantes();
+        estudiantes.forEach(System.out::println); // Funcion lamda para imporimir
+    }
