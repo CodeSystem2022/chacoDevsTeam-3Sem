@@ -123,6 +123,10 @@
  ### JavaScript - No hubo desarrollo.
  
  ### Python - Pool de conexiones con Python y Postgresql -> Parte 2
+
+ ## Proyecto integrador final
+
+ ### Python - [Gestion Biblioteca](https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/tree/main/PYTHON/TrabajoFinal3Semestre/GestionBiblioteca)
  
   -------------------------------------------------------------------------------------------------------------------------------------------------------------------
   WIKI https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/wiki
