@@ -29,7 +29,6 @@
 # **Proyecto Integrador Gestion Biblioteca**
 
 Se acordo con el equipo a desarrollar otro tipo de aplicación  por la cual se opto  por un sistema de gestion de Biblioteca, donde podriamos explayar los conocimientos adquiridos en el transcurso del semestre.
-El sprint del proyecto, milestones y tickets de desarrollo se fue desarrollando dentro del repositorio chacoDevsTeam-3Semestre: (https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/tree/main/PYTHON/TrabajoFinal3Semestre/GestionBiblioteca) 
 
 # Estructura:
 
