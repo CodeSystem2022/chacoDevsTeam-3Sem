@@ -48,7 +48,7 @@ public class EstudianteDAO {
         PreparedStatement ps;
         ResultSet rs;
         Connection con = getConnection();
-        String sql = "SELECT * FROM estudiante2022 WHERE idestudiantes2022=?";
+        String sql = "SELECT * FROM estudiantes2022 WHERE idestudiantes2022=?";
         try {
             ps = con.prepareStatement(sql);
             ps.setInt(1, estudiante.getIdEstudiante());
