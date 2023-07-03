@@ -56,19 +56,25 @@ def ejecutar_opcion(opcion):
             mostrar_menu_solicitud()
         else:
             print("Volviendo al menu principal.")
-    elif opcion == "3":
-        print("VOLVER")
 
 
 def menu():
     inicio()
-    mostrar_menu_principal()
+
     opcion_menu = ""
     while opcion_menu != "3":
-        opcion_menu = input("Elige una opción (1-3): ")
-        ejecutar_opcion(opcion_menu)
         mostrar_menu_principal()
-
+        try:
+            opcion_menu = input("Elige una opción (1-3): ")
+            ejecutar_opcion(opcion_menu)
+            if 0 < int(opcion_menu) < 4:
+                if int(opcion_menu) != 3:
+                    mostrar_menu_principal()
+            else:
+                print("Opción inválida. Por favor, elige una opción válida.")
+        except Exception as e:
+            print(f'Opción inválida. Por favor, elige una opción válida, error: {e} ')
+            opcion_menu = ""
 
 menu()
 print("Hasta Luego!")
