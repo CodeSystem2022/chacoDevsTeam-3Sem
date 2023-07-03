@@ -133,13 +133,12 @@ public class EstudianteDAO {
         if(modificado)
             System.out.println("Estudiante modificado: "+estudianteModificado);
         else
-            System.out.println;("No se modifico el estudiante: "+estudianteModificado);
+            System.out.println("No se modifico el estudiante: "+estudianteModificado);
 
-        }
         //Listar los estudiantes
-        var estudianteDao = new EstudianteDAO();
+        var estudianteDao1 = new EstudianteDAO();
         System.out.println("Listado de estudiantes: ");
-        List<Estudiante> estudiantes = estudianteDao.listarEstudiantes();
+        List<Estudiante> estudiantes = estudianteDao1.listarEstudiantes();
         estudiantes.forEach(System.out::println); // Funcion lamda para imporimir
         //Buscar por id
         var estudiante1 = new Estudiante(2);
