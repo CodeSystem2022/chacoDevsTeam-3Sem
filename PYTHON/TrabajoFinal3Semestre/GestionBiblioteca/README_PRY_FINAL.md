@@ -2,9 +2,34 @@
     <img width="100%" src="https://user-images.githubusercontent.com/70241433/233533920-47091762-ed02-441c-bcb9-02b0112a2dc4.gif"> 
 </p>
 
+
+# **Integrantes**
+
+:godmode:Balbuena, Fernando Nicolas 
+
+:godmode:Espinola, Renzo Oscar    
+
+:godmode:Giménez Ríos, Tatiana T.  
+
+:godmode:Gutiérrez, Juana Natalia   
+
+:godmode:Gutiérrez, Alejo Hernán 
+
+:godmode:Gutiérrez, Juan Carlos 
+
+:godmode:Gutiérrez, René Agustín
+
+:godmode:Iván, Matías 
+
+:godmode:Valdez, Carlos Federico
+
+:godmode:Valladares, Juan Ignacio  
+
+
 # **Proyecto Integrador Gestion Biblioteca**
 
 Se acordo con el equipo a desarrollar otro tipo de aplicación  por la cual se opto  por un sistema de gestion de Biblioteca, donde podriamos explayar los conocimientos adquiridos en el transcurso del semestre.
+El sprint del proyecto, milestones y tickets de desarrollo se fue desarrollando dentro del repositorio chacoDevsTeam-3Semestre: (https://github.com/CodeSystem2022/chacoDevsTeam-3Semestre/tree/main/PYTHON/TrabajoFinal3Semestre/GestionBiblioteca) 
 
 # Estructura:
 
@@ -408,6 +433,76 @@ log.StreamHandler(): Este controlador envía los registros a la corriente de sal
 
 En resumen, las instrucciones configuran la biblioteca de registro logging en Python para que los mensajes de registro con un nivel igual o superior a INFO se muestren en la consola y se guarden en un archivo llamado capa_datos.log. El formato del mensaje de registro incluye la fecha y hora, el nivel del registro, el nombre del archivo y el número de línea, y el mensaje en sí. El formato de fecha y hora utiliza un formato de 12 horas.
 
+## Clase del paquete utils
 
+### date_utils.py
 
+La primera línea import datetime importa el módulo datetime, que proporciona clases para trabajar con fechas y horas en Python.
 
+La función obtener_fecha_hoy() es definida sin argumentos. Esta función se encargará de obtener la fecha actual y formatearla.
+
+La siguiente línea fecha_actual = datetime.date.today() utiliza la clase date del módulo datetime para obtener la fecha actual. datetime.date.today() devuelve un objeto date que representa la fecha actual.
+
+Después, se utiliza fecha_actual.strftime("%d/%m/%Y") para formatear la fecha actual. strftime es un método que se utiliza para formatear una fecha en una cadena de caracteres según un formato específico. En este caso, se utiliza el formato "%d/%m/%Y", donde %d representa el día, %m representa el mes y %Y representa el año en formato de cuatro dígitos. Por lo tanto, fecha_actual.strftime("%d/%m/%Y") devuelve una cadena de caracteres que representa la fecha actual en formato "dd/mm/aaaa".
+
+Finalmente, se retorna fecha_formateada que contiene la fecha actual formateada como resultado de la función obtener_fecha_hoy().
+
+En resumen, este código importa el módulo datetime, define una función llamada obtener_fecha_hoy() que utiliza el módulo datetime para obtener la fecha actual y la devuelve formateada como una cadena de caracteres en el formato "dd/mm/aaaa".
+
+## Clase del paquete enums
+
+### estados_libros.py
+
+La primera línea from enum import Enum importa la clase Enum del módulo enum, que proporciona una forma de definir enumerados en Python.
+
+La clase EstadoLibro es definida utilizando la clase Enum como base. Esto significa que EstadoLibro es una subclase de Enum y se utiliza para representar un conjunto fijo de estados posibles para un libro.
+
+Dentro de la clase EstadoLibro, se definen dos miembros del enumerado: DEVUELTO y NO_DEVUELTO. Cada miembro está asociado a un valor específico. En este caso, '1' está asociado a DEVUELTO y '2' está asociado a NO_DEVUELTO. Estos valores pueden ser cualquier tipo de datos válido en Python, no están limitados a cadenas de caracteres.
+
+A continuación, se define un método estático llamado obtener_estado(). Los métodos estáticos se definen utilizando el decorador @staticmethod. Un método estático pertenece a la clase en lugar de a una instancia de la clase y no puede acceder a atributos de instancia.
+
+El método obtener_estado() simplemente retorna una lista de todos los miembros del enumerado EstadoLibro utilizando list(EstadoLibro). La función list() toma un iterable (en este caso, EstadoLibro) y devuelve una lista que contiene todos los elementos del iterable. En este caso, el resultado será una lista que contiene los miembros DEVUELTO y NO_DEVUELTO.
+
+En resumen, este código define un enumerado llamado EstadoLibro con dos miembros: DEVUELTO y NO_DEVUELTO. Luego, proporciona un método estático llamado obtener_estado() que retorna una lista con todos los miembros del enumerado
+
+## Clase del paquete ui
+
+### ui.py
+
+La clase que has proporcionado no es realmente una clase en sí misma, sino una serie de funciones que imprimen menús en la consola. Cada función corresponde a un menú diferente y muestra las opciones disponibles en cada uno.
+
+Aquí está una explicación general de cada función:
+
+mostrar_menu_socio(): Esta función muestra un menú para la administración de socios. Imprime un encabezado con el título "ABM SOCIO" centrado y una serie de opciones numeradas para agregar, listar, eliminar y modificar socios, así como una opción para volver al menú principal.
+
+mostrar_menu_autor(): Esta función muestra un menú para la administración de autores. Imprime un encabezado con el título "ABM AUTOR" centrado y una serie de opciones numeradas para agregar, listar, eliminar y modificar autores, así como una opción para volver al menú principal.
+
+mostrar_menu_libro(): Esta función muestra un menú para la administración de libros. Imprime un encabezado con el título "ABM de Libro" centrado y una serie de opciones numeradas para agregar, listar, eliminar y modificar libros, así como una opción para agregar un libro existente y una opción para volver al menú principal.
+
+mostrar_menu_principal_abm1(): Esta función muestra un menú principal que presenta las opciones de administración de socios, autores y libros. Imprime un encabezado con el título "ABM de Libro" centrado y una serie de opciones numeradas para acceder a los menús de administración correspondientes, así como una opción para volver al menú principal.
+
+mostrar_menu_principal(): Esta función muestra el menú principal de la aplicación. Imprime un encabezado con el título "GESTION BIBLIOTECA" centrado y una serie de opciones numeradas para acceder a diferentes funcionalidades, como la administración de socios, autores y libros, así como opciones para retirar/devolver libros y salir del programa.
+
+mostrar_menu_solicitud(): Esta función muestra un menú para la gestión de solicitudes y devoluciones de libros. Imprime un encabezado con el título "SOLICITUD/DEVOLUCION DE LIBROS" centrado y una serie de opciones numeradas para solicitar libros, devolver libros y volver al menú principal.
+
+En resumen, estas funciones definen diferentes menús y opciones para una aplicación de gestión de biblioteca. Cada función imprime el menú correspondiente en la consola para que el usuario pueda interactuar con la aplicación seleccionando las opciones deseadas.
+
+## Clase del paquete test
+
+### test_gestion_biblioteca.py
+
+En las primeras líneas, se importan diferentes módulos y clases necesarias para la ejecución del programa. Se importa ui.ui, SolicitudService de service.service_solicitud, service_autor de service.service_autor, service_socio de service.service_socio, service_libro de service.service_libro, mostrar_menu_principal y mostrar_menu_solicitud de ui.ui, y DatabaseManager de config.database_manager.
+
+La función inicio() se define para inicializar la base de datos utilizando DatabaseManager.inicializar(). Esta función captura cualquier excepción que pueda ocurrir durante la inicialización e imprime el mensaje de error correspondiente.
+
+La función ejecutar_opcion_abm(opcion) se define para ejecutar una opción seleccionada en el menú principal relacionada con las operaciones de administración (ABM: Alta, Baja, Modificación) de socios, autores y libros. Dependiendo de la opción seleccionada, se llama a las funciones correspondientes de los servicios (service_socio(), service_autor(), service_libro()) o se muestra un mensaje de "Volviendo al menú principal" si la opción es "4".
+
+La función ejecutar_opcion_solicitud(opcion1) se define para ejecutar una opción seleccionada en el menú de solicitud y devolución de libros. Dependiendo de la opción seleccionada, se llama a las funciones correspondientes de SolicitudService (service_solicitud_alta(), service_devolucion_alta()) o se retorna si la opción es "3" (volver).
+
+La función ejecutar_opcion(opcion) se define para ejecutar una opción seleccionada en el menú principal. Si la opción es "1", se muestra el menú de administración (ABM) y se solicita una opción al usuario en un bucle hasta que se seleccione la opción "4" (volver al menú principal). Si la opción es "2", se muestra el menú de solicitud y devolución de libros y se solicita una opción al usuario en un bucle hasta que se seleccione la opción "3" (volver al menú principal). Si la opción es "3", se imprime "VOLVER".
+
+La función menu() se define para ejecutar el flujo principal del programa. Primero, se llama a inicio() para inicializar la base de datos. Luego, se muestra el menú principal y se solicita una opción al usuario en un bucle hasta que se seleccione la opción "3" (salir del programa). Dentro del bucle, se llama a ejecutar_opcion(opcion) para ejecutar la opción seleccionada y se vuelve a mostrar el menú principal.
+
+Finalmente, se llama a menu() para iniciar la ejecución del programa y se imprime "Hasta Luego!" al finalizar.
+
+En resumen, este código define diferentes funciones para mostrar menús de opciones y ejecutar acciones correspondientes en una aplicación de gestión de biblioteca. El programa interactúa con el usuario, mostrando los menús y solicitando opciones, y realiza las operaciones correspondientes utilizando los servicios y la base de datos.
